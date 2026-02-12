@@ -39,6 +39,14 @@ export function GuessInput({ onSubmit, disabled }: GuessInputProps) {
 
   const handleKeyDown = useCallback(
     (e: React.KeyboardEvent) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        const target =
+          highlightIndex >= 0 ? results[highlightIndex] : results[0];
+        if (target) selectCountry(target);
+        return;
+      }
+
       if (!isOpen || results.length === 0) return;
 
       if (e.key === "ArrowDown") {
@@ -47,9 +55,6 @@ export function GuessInput({ onSubmit, disabled }: GuessInputProps) {
       } else if (e.key === "ArrowUp") {
         e.preventDefault();
         setHighlightIndex((i) => Math.max(i - 1, 0));
-      } else if (e.key === "Enter" && highlightIndex >= 0) {
-        e.preventDefault();
-        selectCountry(results[highlightIndex]);
       } else if (e.key === "Escape") {
         setIsOpen(false);
       }
