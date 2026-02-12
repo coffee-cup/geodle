@@ -1,0 +1,39 @@
+{
+  "name": "geodle",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev --port 5543",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "data:prepare": "bun run data/scripts/prepare-countries.ts"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "@tanstack/react-router": "^1.132.0",
+    "@tanstack/react-start": "^1.132.0",
+    "@tanstack/router-plugin": "^1.132.0",
+    "d3-geo": "^3.1.1",
+    "fuzzysort": "^3.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "seedrandom": "^3.0.5",
+    "tailwindcss": "^4.1.18",
+    "vite-tsconfig-paths": "^6.0.2"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
+    "@types/d3-geo": "^3.1.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/seedrandom": "^3.0.8",
+    "@vitejs/plugin-react": "^5.0.4",
+    "jsdom": "^27.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^7.1.7",
+    "vitest": "^3.0.5"
+  }
+}

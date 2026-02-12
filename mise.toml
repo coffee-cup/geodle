@@ -1,0 +1,18 @@
+[tools]
+bun = "1.3.5"
+
+[tasks."data:prepare"]
+run = "bun run data/scripts/prepare-countries.ts"
+description = "Download Natural Earth data and generate static JSON files"
+
+[tasks.dev]
+run = "bun run vite dev --port 5543"
+description = "Start dev server"
+
+[tasks.test]
+run = "bun run vitest run"
+description = "Run tests"
+
+[tasks.build]
+run = "bun run vite build"
+description = "Build for production"
