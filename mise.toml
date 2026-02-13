@@ -13,6 +13,10 @@ description = "Start dev server"
 run = "bun run vitest run"
 description = "Run tests"
 
+[tasks.check]
+run = "bun run tsc --noEmit"
+description = "Typecheck with noEmit"
+
 [tasks.build]
 run = "bun run vite build"
 description = "Build for production"

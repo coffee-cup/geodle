@@ -37,6 +37,7 @@ Daily country silhouette guessing game (Wordle-style).
 
 - NEVER run the dev server from Claude — let the user run it manually
 - Dev server runs on port 5543
+- `mise run check` — typecheck after changes
 
 ## Testing
 
