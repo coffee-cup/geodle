@@ -38,7 +38,7 @@ function LivesPage() {
           round={game.round}
         />
 
-        <Silhouette geometry={game.silhouette.geometry} />
+        <Silhouette svg={game.silhouette.svg} />
 
         <GuessInput onSubmit={handleGuess} disabled={inputDisabled} />
 

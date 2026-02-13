@@ -27,9 +27,7 @@ export interface GameState {
 }
 
 export interface SilhouetteData {
-  type: "Feature";
-  geometry: GeoJSON.Geometry;
-  properties: Record<string, never>;
+  svg: string;
 }
 
 export interface GuessResponse {

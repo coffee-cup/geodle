@@ -1,18 +1,14 @@
 import { createServerFn } from "@tanstack/react-start";
 import { getShuffledCountries } from "@/lib/puzzle";
 import { evaluateGuess } from "@/lib/evaluate-guess";
-import countriesGeojson from "@/data/countries.geojson.json";
+import { getSvgByCode } from "@/server/silhouette";
 import countriesMetaJson from "@/data/countries-meta.json";
 import type { CountryMeta, SilhouetteData, LivesSessionData, LivesGuessResponse } from "@/types";
-import type { FeatureCollection, Geometry } from "geojson";
 
 const countriesMeta = countriesMetaJson as unknown as CountryMeta[];
-const geo = countriesGeojson as FeatureCollection<Geometry, { code: string }>;
 
 function getSilhouette(code: string): SilhouetteData {
-  const feature = geo.features.find((f) => f.properties.code === code);
-  if (!feature) throw new Error("Country geometry not found");
-  return { type: "Feature", geometry: feature.geometry, properties: {} };
+  return { svg: getSvgByCode(code) };
 }
 
 export const startLivesSession = createServerFn({ method: "GET" }).handler(

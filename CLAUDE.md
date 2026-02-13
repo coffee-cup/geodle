@@ -6,7 +6,7 @@ Daily country silhouette guessing game (Wordle-style).
 
 - TanStack Start (latest RC, v1.159+)
 - Vite 7, React 19, Tailwind CSS v4
-- d3-geo, seedrandom, fuzzysort
+- seedrandom, fuzzysort
 
 ## Key Architecture Decisions
 
@@ -16,7 +16,8 @@ Daily country silhouette guessing game (Wordle-style).
 - Entry: `src/router.tsx` exports `getRouter()`
 - Route tree auto-generated at `src/routeTree.gen.ts`
 - Server env vars: `import.meta.env` in server fns
-- Data pipeline (`bun run data/scripts/prepare-countries.ts`) → 3 static JSON files from Natural Earth
+- Data pipeline: `mise run data` runs both prepare-countries (meta JSON) and download-silhouettes (Borderly SVGs)
+- Silhouettes are high-res SVGs from Borderly, checked into `src/data/silhouettes/`, loaded via Vite `?raw` glob
 - Country difficulty is tag-based (explicit sets), not area-computed
 
 ## Styling
@@ -29,7 +30,7 @@ Daily country silhouette guessing game (Wordle-style).
 
 ## Data Files
 
-- `src/data/countries.geojson.json` — FeatureCollection, properties stripped to `{code}` only
+- `src/data/silhouettes/*.svg` — high-res country SVGs from Borderly (239 files), `currentColor` fill
 - `src/data/countries-meta.json` — server-only, has centroid/difficulty
 - `src/data/countries-list.json` — client-safe, for autocomplete
 

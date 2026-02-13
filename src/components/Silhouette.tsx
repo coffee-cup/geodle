@@ -1,38 +1,14 @@
-import { useMemo } from "react";
-import { geoPath, geoMercator } from "d3-geo";
-import type { Geometry } from "geojson";
-
 interface SilhouetteProps {
-  geometry: Geometry;
-  width?: number;
-  height?: number;
+  svg: string;
 }
 
-export function Silhouette({
-  geometry,
-  width = 400,
-  height = 400,
-}: SilhouetteProps) {
-  const pathD = useMemo(() => {
-    const feature = {
-      type: "Feature" as const,
-      geometry,
-      properties: {},
-    };
-
-    const projection = geoMercator().fitSize([width, height], feature);
-    const path = geoPath(projection);
-    return path(feature) ?? "";
-  }, [geometry, width, height]);
-
+export function Silhouette({ svg }: SilhouetteProps) {
   return (
-    <svg
-      viewBox={`0 0 ${width} ${height}`}
-      className="w-full max-w-sm mx-auto text-ink"
+    <div
+      className="w-full max-w-sm mx-auto text-ink [&>svg]:w-full [&>svg]:h-auto"
       role="img"
       aria-label="Country silhouette"
-    >
-      <path d={pathD} fill="currentColor" />
-    </svg>
+      dangerouslySetInnerHTML={{ __html: svg }}
+    />
   );
 }

@@ -1,37 +1,30 @@
 import { createServerFn } from "@tanstack/react-start";
 import { getPuzzleNumber, getAnswerForPuzzle } from "@/lib/puzzle";
-import countriesGeojson from "@/data/countries.geojson.json";
 import countriesMetaJson from "@/data/countries-meta.json";
 import type { CountryMeta, SilhouetteData } from "@/types";
-import type { FeatureCollection, Geometry } from "geojson";
 
 const SALT = import.meta.env.PUZZLE_SALT ?? "geodle-default-salt";
 const countriesMeta = countriesMetaJson as unknown as CountryMeta[];
 
+const svgModules = import.meta.glob("/src/data/silhouettes/*.svg", {
+  query: "?raw",
+  import: "default",
+  eager: true,
+}) as Record<string, string>;
+
+export function getSvgByCode(code: string): string {
+  const key = `/src/data/silhouettes/${code}.svg`;
+  const svg = svgModules[key];
+  if (!svg) throw new Error(`SVG not found for ${code}`);
+  return svg;
+}
+
 export const getDailySilhouette = createServerFn({ method: "GET" }).handler(
   async () => {
     const puzzleNumber = getPuzzleNumber();
-    const answer = getAnswerForPuzzle(
-      puzzleNumber,
-      countriesMeta,
-      SALT,
-    );
+    const answer = getAnswerForPuzzle(puzzleNumber, countriesMeta, SALT);
 
-    const geo = countriesGeojson as FeatureCollection<
-      Geometry,
-      { code: string }
-    >;
-    const feature = geo.features.find(
-      (f) => f.properties.code === answer.code,
-    );
-    if (!feature) throw new Error("Country geometry not found");
-
-    const silhouette: SilhouetteData = {
-      type: "Feature",
-      geometry: feature.geometry,
-      properties: {},
-    };
-
+    const silhouette: SilhouetteData = { svg: getSvgByCode(answer.code) };
     return { silhouette, puzzleNumber };
   },
 );

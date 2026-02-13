@@ -1,5 +1,5 @@
 import { geoCentroid } from "d3-geo";
-import type { Feature, FeatureCollection, Geometry } from "geojson";
+import type { FeatureCollection } from "geojson";
 
 const SOURCE_URL =
   "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson";
@@ -44,7 +44,6 @@ async function main() {
   console.log(`Downloaded ${raw.features.length} features`);
 
   const meta: CountryMeta[] = [];
-  const geoFeatures: Feature<Geometry, { code: string }>[] = [];
 
   for (const feature of raw.features) {
     const props = feature.properties!;
@@ -63,27 +62,15 @@ async function main() {
       centroid: [+centroid[0].toFixed(2), +centroid[1].toFixed(2)],
       difficulty: getDifficulty(code),
     });
-
-    geoFeatures.push({
-      type: "Feature",
-      geometry: feature.geometry,
-      properties: { code },
-    });
   }
 
   meta.sort((a, b) => a.name.localeCompare(b.name));
-
-  const geojson: FeatureCollection<Geometry, { code: string }> = {
-    type: "FeatureCollection",
-    features: geoFeatures,
-  };
 
   const countriesList = meta.map(({ code, name }) => ({ code, name }));
 
   const { mkdirSync, writeFileSync } = await import("fs");
   mkdirSync(OUT_DIR, { recursive: true });
 
-  writeFileSync(`${OUT_DIR}/countries.geojson.json`, JSON.stringify(geojson));
   writeFileSync(`${OUT_DIR}/countries-meta.json`, JSON.stringify(meta, null, 2));
   writeFileSync(`${OUT_DIR}/countries-list.json`, JSON.stringify(countriesList, null, 2));
 
