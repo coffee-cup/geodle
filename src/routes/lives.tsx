@@ -30,7 +30,7 @@ function LivesPage() {
 
   return (
     <div className="min-h-dvh flex flex-col">
-      <Header mode="lives" />
+      <Header />
       <main className="flex-1 flex flex-col items-center gap-6 px-4 py-8 max-w-lg mx-auto w-full">
         <LivesIndicator
           lives={game.lives}

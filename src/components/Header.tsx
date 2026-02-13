@@ -1,49 +1,46 @@
-import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { HelpModal } from "./HelpModal";
 import { ThemeToggle } from "./ThemeToggle";
 
-interface HeaderProps {
-  mode?: "daily" | "lives";
-}
+const linkBase =
+  "px-3 py-2 font-medium transition-colors text-ink-muted hover:text-ink";
+const linkActive =
+  "px-3 py-2 font-medium text-ink underline underline-offset-4 decoration-accent decoration-2";
 
-export function Header({ mode = "daily" }: HeaderProps) {
-  const [helpOpen, setHelpOpen] = useState(false);
-
+export function Header() {
   return (
-    <>
-      <header className="flex flex-col items-center border-b-2 border-border">
-        <div className="flex items-center justify-between w-full px-4 py-2.5">
-          <ThemeToggle />
-          <h1 className="text-3xl font-serif italic text-ink underline decoration-wavy decoration-accent underline-offset-4 decoration-1">
-            Geodle
-          </h1>
-          <button
-            onClick={() => setHelpOpen(true)}
-            className="sketch-border size-8 flex items-center justify-center
-              border border-border text-ink-muted text-sm font-semibold
-              hover:text-ink transition-colors"
-            aria-label="How to play"
-          >
-            ?
-          </button>
-        </div>
-        <nav className="flex gap-4 pb-2 text-sm font-medium">
-          <Link
-            to="/"
-            className={`transition-colors ${mode === "daily" ? "text-ink underline underline-offset-4 decoration-accent" : "text-ink-muted hover:text-ink"}`}
-          >
-            Daily
-          </Link>
-          <Link
-            to="/lives"
-            className={`transition-colors ${mode === "lives" ? "text-ink underline underline-offset-4 decoration-accent" : "text-ink-muted hover:text-ink"}`}
-          >
-            Lives
-          </Link>
-        </nav>
-      </header>
-      <HelpModal open={helpOpen} onClose={() => setHelpOpen(false)} />
-    </>
+    <header className="flex flex-col items-center border-b-2 border-border">
+      <div className="flex items-center justify-between w-full px-4 py-2.5">
+        <ThemeToggle />
+        <h1 className="text-3xl font-serif italic text-ink underline decoration-wavy decoration-accent underline-offset-4 decoration-1">
+          Geodle
+        </h1>
+        <Link
+          to="/help"
+          className="sketch-border size-8 flex items-center justify-center
+            border border-border text-ink-muted text-sm font-semibold
+            hover:text-ink transition-colors"
+          aria-label="How to play"
+        >
+          ?
+        </Link>
+      </div>
+      <nav className="flex gap-1 pb-2">
+        <Link
+          to="/"
+          activeOptions={{ exact: true }}
+          activeProps={{ className: linkActive }}
+          inactiveProps={{ className: linkBase }}
+        >
+          Daily
+        </Link>
+        <Link
+          to="/lives"
+          activeProps={{ className: linkActive }}
+          inactiveProps={{ className: linkBase }}
+        >
+          Lives
+        </Link>
+      </nav>
+    </header>
   );
 }

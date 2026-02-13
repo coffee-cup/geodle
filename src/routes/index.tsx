@@ -6,6 +6,7 @@ import { Silhouette } from "@/components/Silhouette";
 import { GuessInput } from "@/components/GuessInput";
 import { GuessList } from "@/components/GuessList";
 import { ResultModal } from "@/components/ResultModal";
+import { Countdown } from "@/components/Countdown";
 import { useGameState } from "@/hooks/useGameState";
 
 export const Route = createFileRoute("/")({
@@ -38,12 +39,15 @@ function GamePage() {
         <GuessInput onSubmit={handleGuess} disabled={gameOver} />
         <GuessList guesses={game.guesses} maxGuesses={6} />
         {gameOver && !modalOpen && (
-          <button
-            onClick={() => setModalOpen(true)}
-            className="text-accent hover:text-accent-hover font-medium underline underline-offset-2 transition-colors"
-          >
-            View results
-          </button>
+          <div className="flex flex-col items-center gap-2">
+            <button
+              onClick={() => setModalOpen(true)}
+              className="text-accent hover:text-accent-hover font-medium underline underline-offset-2 transition-colors"
+            >
+              View results
+            </button>
+            <Countdown />
+          </div>
         )}
       </main>
       <ResultModal

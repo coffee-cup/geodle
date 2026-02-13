@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Countdown } from "./Countdown";
 import { ShareGrid } from "./ShareGrid";
 import type { GuessResult } from "@/types";
 
@@ -11,18 +11,6 @@ interface ResultModalProps {
   onClose: () => void;
 }
 
-function getNextPuzzleCountdown(): string {
-  const now = new Date();
-  const tomorrow = new Date(now);
-  tomorrow.setUTCHours(24, 0, 0, 0);
-  const diff = tomorrow.getTime() - now.getTime();
-
-  const h = Math.floor(diff / 3600000);
-  const m = Math.floor((diff % 3600000) / 60000);
-  const s = Math.floor((diff % 60000) / 1000);
-  return `${h}h ${m}m ${s}s`;
-}
-
 export function ResultModal({
   open,
   won,
@@ -31,14 +19,6 @@ export function ResultModal({
   puzzleNumber,
   onClose,
 }: ResultModalProps) {
-  const [countdown, setCountdown] = useState(getNextPuzzleCountdown());
-
-  useEffect(() => {
-    if (!open) return;
-    const id = setInterval(() => setCountdown(getNextPuzzleCountdown()), 1000);
-    return () => clearInterval(id);
-  }, [open]);
-
   if (!open) return null;
 
   return (
@@ -62,9 +42,7 @@ export function ResultModal({
 
         <ShareGrid guesses={guesses} puzzleNumber={puzzleNumber} won={won} />
 
-        <p className="text-center text-ink-muted text-sm tabular-nums">
-          Next puzzle in {countdown}
-        </p>
+        <Countdown className="text-center" />
 
         <button
           onClick={onClose}
