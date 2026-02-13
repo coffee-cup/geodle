@@ -74,9 +74,9 @@ export function GuessInput({ onSubmit, disabled }: GuessInputProps) {
         onFocus={() => query.trim() && results.length > 0 && setIsOpen(true)}
         disabled={disabled}
         placeholder={disabled ? "Game over" : "Type a country name..."}
-        className="w-full px-4 py-3 bg-white/80 border-2 border-stone-300 rounded-lg
-          font-serif text-stone-800 placeholder:text-stone-400
-          focus:outline-none focus:border-amber-600 focus:ring-1 focus:ring-amber-600
+        className="sketch-border w-full px-4 py-3 bg-surface/80 border border-border
+          text-ink placeholder:text-ink-muted/50
+          focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20
           disabled:opacity-50 disabled:cursor-not-allowed
           transition-colors"
         autoComplete="off"
@@ -90,8 +90,8 @@ export function GuessInput({ onSubmit, disabled }: GuessInputProps) {
         <ul
           id="country-listbox"
           role="listbox"
-          className="absolute z-10 mt-1 w-full bg-white border border-stone-200
-            rounded-lg shadow-lg overflow-hidden"
+          className="sketch-border absolute z-10 mt-1 w-full bg-surface border border-border
+            overflow-hidden"
         >
           {results.map((country, i) => (
             <li
@@ -100,8 +100,8 @@ export function GuessInput({ onSubmit, disabled }: GuessInputProps) {
               aria-selected={i === highlightIndex}
               onMouseDown={() => selectCountry(country)}
               onMouseEnter={() => setHighlightIndex(i)}
-              className={`px-4 py-2 cursor-pointer font-serif text-stone-800
-                ${i === highlightIndex ? "bg-amber-50" : "hover:bg-stone-50"}
+              className={`px-4 py-2 cursor-pointer text-ink
+                ${i === highlightIndex ? "bg-accent/10" : "hover:bg-paper"}
                 transition-colors`}
             >
               {country.name}

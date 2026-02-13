@@ -1,11 +1,45 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  --font-serif: "Playfair Display", "Georgia", serif;
-  --font-sans: "Source Sans 3", system-ui, sans-serif;
-  --color-paper: #f5f0e8;
-  --color-paper-dark: #ebe4d8;
-  --color-ink: #2c2c2c;
-  --color-accent: #b8860b;
-  --color-accent-hover: #996f09;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-serif: "Instrument Serif", "Georgia", serif;
+  --color-paper: #f4f1eb;
+  --color-surface: #fffef9;
+  --color-border: #d5cfc3;
+  --color-ink: #2c2825;
+  --color-ink-muted: #8a8279;
+  --color-accent: #c27832;
+  --color-accent-hover: #a8632a;
+  --color-correct: #5a8a4a;
+  --color-correct-light: #e8f0e4;
+}
+
+:root {
+  --grid-color: rgba(0, 0, 0, 0.04);
+}
+
+.dark {
+  --color-paper: #1a1816;
+  --color-surface: #242120;
+  --color-border: #3a3633;
+  --color-ink: #e5dfd6;
+  --color-ink-muted: #8a8279;
+  --color-accent: #e09550;
+  --color-accent-hover: #c88040;
+  --color-correct: #6aad58;
+  --color-correct-light: #1e2a1a;
+  --grid-color: rgba(255, 255, 255, 0.03);
+}
+
+body {
+  background-image:
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.sketch-border {
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
 }

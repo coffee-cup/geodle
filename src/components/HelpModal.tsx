@@ -12,14 +12,14 @@ export function HelpModal({ open, onClose }: HelpModalProps) {
       onClick={onClose}
     >
       <div
-        className="bg-[#f5f0e8] rounded-2xl shadow-2xl p-8 mx-4 max-w-md w-full space-y-4"
+        className="sketch-border bg-paper border border-border p-8 mx-4 max-w-md w-full space-y-4 -rotate-[0.3deg]"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="text-2xl font-serif font-bold text-stone-800">
+        <h2 className="text-2xl font-bold text-ink text-balance">
           How to Play
         </h2>
 
-        <div className="space-y-3 text-stone-600 font-serif leading-relaxed">
+        <div className="space-y-3 text-ink-muted leading-relaxed text-pretty">
           <p>Guess the country from its silhouette in 6 tries.</p>
           <p>
             After each guess, you&apos;ll see how far away your guess is and in
@@ -47,8 +47,8 @@ export function HelpModal({ open, onClose }: HelpModalProps) {
 
         <button
           onClick={onClose}
-          className="w-full py-2 bg-amber-600 text-white rounded-lg font-serif
-            hover:bg-amber-700 transition-colors"
+          className="sketch-border w-full py-2.5 bg-accent text-white font-semibold
+            hover:bg-accent-hover transition-colors"
         >
           Got it
         </button>

@@ -47,28 +47,28 @@ export function ResultModal({
       onClick={onClose}
     >
       <div
-        className="bg-[#f5f0e8] rounded-2xl shadow-2xl p-8 mx-4 max-w-md w-full space-y-6"
+        className="sketch-border bg-paper border border-border p-8 mx-4 max-w-md w-full space-y-6 -rotate-[0.3deg]"
         onClick={(e) => e.stopPropagation()}
       >
-        <h2 className="text-2xl font-serif font-bold text-stone-800 text-center">
+        <h2 className="text-2xl font-bold text-ink text-center text-balance">
           {won ? "Well done!" : "Not this time"}
         </h2>
 
         {!won && answerName && (
-          <p className="text-center text-stone-600 font-serif">
-            The answer was <strong className="text-stone-800">{answerName}</strong>
+          <p className="text-center text-ink-muted text-pretty">
+            The answer was <strong className="text-ink">{answerName}</strong>
           </p>
         )}
 
         <ShareGrid guesses={guesses} puzzleNumber={puzzleNumber} won={won} />
 
-        <p className="text-center text-stone-500 text-sm">
+        <p className="text-center text-ink-muted text-sm tabular-nums">
           Next puzzle in {countdown}
         </p>
 
         <button
           onClick={onClose}
-          className="w-full py-2 text-stone-500 hover:text-stone-700 font-serif transition-colors"
+          className="w-full py-2 text-ink-muted hover:text-ink transition-colors"
         >
           Close
         </button>

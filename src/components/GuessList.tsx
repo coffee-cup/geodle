@@ -12,22 +12,22 @@ export function GuessList({ guesses, maxGuesses }: GuessListProps) {
       {guesses.map((guess, i) => (
         <div
           key={i}
-          className={`flex items-center justify-between px-4 py-3 rounded-lg border
+          className={`sketch-border flex items-center justify-between px-4 py-3 border
             ${
               guess.correct
-                ? "bg-green-50 border-green-300"
-                : "bg-white/60 border-stone-200"
+                ? "bg-correct-light border-correct/30"
+                : "bg-surface/60 border-border"
             }`}
         >
-          <span className="font-serif text-stone-800 font-medium">
+          <span className="text-ink font-medium">
             {guess.name}
           </span>
           <div className="flex items-center gap-3 text-sm">
             {guess.correct ? (
-              <span className="text-green-600 font-semibold">Correct!</span>
+              <span className="text-correct font-semibold">Correct!</span>
             ) : (
               <>
-                <span className="text-stone-500 font-mono">
+                <span className="text-ink-muted font-mono tabular-nums">
                   {guess.distance_km.toLocaleString()} km
                 </span>
                 <span className="text-lg" title={guess.direction}>
@@ -39,13 +39,12 @@ export function GuessList({ guesses, maxGuesses }: GuessListProps) {
         </div>
       ))}
 
-      {/* Empty slots */}
       {Array.from({ length: maxGuesses - guesses.length }).map((_, i) => (
         <div
           key={`empty-${i}`}
-          className="flex items-center px-4 py-3 rounded-lg border border-dashed border-stone-200"
+          className="sketch-border flex items-center px-4 py-3 border border-dashed border-border"
         >
-          <span className="text-stone-300 font-serif">
+          <span className="text-ink-muted/40">
             Guess {guesses.length + i + 1}
           </span>
         </div>
