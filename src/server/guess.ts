@@ -1,6 +1,6 @@
 import { createServerFn } from "@tanstack/react-start";
 import { getPuzzleNumber, getAnswerForPuzzle } from "@/lib/puzzle";
-import { haversine, bearing, compassDirection } from "@/lib/geo";
+import { evaluateGuess } from "@/lib/evaluate-guess";
 import countriesMetaJson from "@/data/countries-meta.json";
 import type { CountryMeta, GuessResponse } from "@/types";
 
@@ -26,27 +26,12 @@ export const submitGuess = createServerFn({ method: "POST" })
     }
 
     const answer = getAnswerForPuzzle(puzzle_number, countriesMeta, SALT);
-    const guessed = countriesMeta.find((c) => c.code === code);
+    const result = evaluateGuess(code, answer, countriesMeta);
 
-    if (!guessed) {
-      throw new Error("Invalid country code");
-    }
-
-    const correct = code === answer.code;
-    const distance_km = Math.round(
-      haversine(guessed.centroid, answer.centroid),
-    );
-    const bear = bearing(guessed.centroid, answer.centroid);
-    const direction = correct ? "📍" : compassDirection(bear);
-
-    const isReveal = correct || guess_number >= MAX_GUESSES;
+    const isReveal = result.correct || guess_number >= MAX_GUESSES;
 
     return {
-      correct,
-      distance_km,
-      direction,
-      bearing: Math.round(bear),
-      guess_name: guessed.name,
+      ...result,
       ...(isReveal && {
         answer_code: answer.code,
         answer_name: answer.name,

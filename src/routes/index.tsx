@@ -40,7 +40,7 @@ function GamePage() {
         {gameOver && !modalOpen && (
           <button
             onClick={() => setModalOpen(true)}
-            className="text-accent hover:text-accent-hover font-serif underline transition-colors"
+            className="text-accent hover:text-accent-hover font-medium underline underline-offset-2 transition-colors"
           >
             View results
           </button>

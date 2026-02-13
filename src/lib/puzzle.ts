@@ -18,3 +18,18 @@ export function getAnswerForPuzzle(
   const index = Math.floor(rng() * eligible.length);
   return eligible[index];
 }
+
+/** Fisher-Yates shuffle with seeded RNG. Filters out hard countries. */
+export function getShuffledCountries(
+  seed: string,
+  countries: CountryMeta[],
+): CountryMeta[] {
+  const eligible = countries.filter((c) => c.difficulty !== "hard");
+  const shuffled = [...eligible];
+  const rng = seedrandom(seed);
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled;
+}

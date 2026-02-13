@@ -28,11 +28,11 @@ export function Silhouette({
   return (
     <svg
       viewBox={`0 0 ${width} ${height}`}
-      className="w-full max-w-sm mx-auto"
+      className="w-full max-w-sm mx-auto text-ink"
       role="img"
       aria-label="Country silhouette"
     >
-      <path d={pathD} fill="currentColor" className="text-stone-800" />
+      <path d={pathD} fill="currentColor" />
     </svg>
   );
 }

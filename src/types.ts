@@ -41,3 +41,27 @@ export interface GuessResponse {
   answer_code?: string;
   answer_name?: string;
 }
+
+export interface LivesSessionData {
+  seed: string;
+  silhouette: SilhouetteData;
+  round: number;
+}
+
+export interface LivesGuessResponse extends GuessResponse {
+  round_over: boolean;
+  next_silhouette?: SilhouetteData;
+  next_round?: number;
+}
+
+export interface LivesGameState {
+  seed: string;
+  round: number;
+  lives: number;
+  score: number;
+  currentGuesses: GuessResult[];
+  roundStatus: "guessing" | "revealed";
+  status: "playing" | "gameover";
+  answerName?: string;
+  silhouette: SilhouetteData;
+}
