@@ -4,6 +4,10 @@
     "name": "Afghanistan"
   },
   {
+    "code": "ALA",
+    "name": "Åland"
+  },
+  {
     "code": "ALB",
     "name": "Albania"
   },
@@ -12,8 +16,24 @@
     "name": "Algeria"
   },
   {
+    "code": "ASM",
+    "name": "American Samoa"
+  },
+  {
+    "code": "AND",
+    "name": "Andorra"
+  },
+  {
     "code": "AGO",
     "name": "Angola"
+  },
+  {
+    "code": "AIA",
+    "name": "Anguilla"
+  },
+  {
+    "code": "ATG",
+    "name": "Antigua and Barb."
   },
   {
     "code": "ARG",
@@ -22,6 +42,14 @@
   {
     "code": "ARM",
     "name": "Armenia"
+  },
+  {
+    "code": "ABW",
+    "name": "Aruba"
+  },
+  {
+    "code": "ATC",
+    "name": "Ashmore and Cartier Is."
   },
   {
     "code": "AUS",
@@ -40,8 +68,16 @@
     "name": "Bahamas"
   },
   {
+    "code": "BHR",
+    "name": "Bahrain"
+  },
+  {
     "code": "BGD",
     "name": "Bangladesh"
+  },
+  {
+    "code": "BRB",
+    "name": "Barbados"
   },
   {
     "code": "BLR",
@@ -60,6 +96,10 @@
     "name": "Benin"
   },
   {
+    "code": "BMU",
+    "name": "Bermuda"
+  },
+  {
     "code": "BTN",
     "name": "Bhutan"
   },
@@ -76,8 +116,16 @@
     "name": "Botswana"
   },
   {
+    "code": "IOT",
+    "name": "Br. Indian Ocean Ter."
+  },
+  {
     "code": "BRA",
     "name": "Brazil"
+  },
+  {
+    "code": "VGB",
+    "name": "British Virgin Is."
   },
   {
     "code": "BRN",
@@ -96,6 +144,10 @@
     "name": "Burundi"
   },
   {
+    "code": "CPV",
+    "name": "Cabo Verde"
+  },
+  {
     "code": "KHM",
     "name": "Cambodia"
   },
@@ -106,6 +158,10 @@
   {
     "code": "CAN",
     "name": "Canada"
+  },
+  {
+    "code": "CYM",
+    "name": "Cayman Is."
   },
   {
     "code": "CAF",
@@ -128,8 +184,16 @@
     "name": "Colombia"
   },
   {
+    "code": "COM",
+    "name": "Comoros"
+  },
+  {
     "code": "COG",
     "name": "Congo"
+  },
+  {
+    "code": "COK",
+    "name": "Cook Is."
   },
   {
     "code": "CRI",
@@ -146,6 +210,10 @@
   {
     "code": "CUB",
     "name": "Cuba"
+  },
+  {
+    "code": "CUW",
+    "name": "Curaçao"
   },
   {
     "code": "CYP",
@@ -166,6 +234,10 @@
   {
     "code": "DJI",
     "name": "Djibouti"
+  },
+  {
+    "code": "DMA",
+    "name": "Dominica"
   },
   {
     "code": "DOM",
@@ -204,6 +276,10 @@
     "name": "Ethiopia"
   },
   {
+    "code": "FRO",
+    "name": "Faeroe Is."
+  },
+  {
     "code": "FLK",
     "name": "Falkland Is."
   },
@@ -214,6 +290,10 @@
   {
     "code": "FIN",
     "name": "Finland"
+  },
+  {
+    "code": "PYF",
+    "name": "Fr. Polynesia"
   },
   {
     "code": "ATF",
@@ -252,8 +332,20 @@
     "name": "Greenland"
   },
   {
+    "code": "GRD",
+    "name": "Grenada"
+  },
+  {
+    "code": "GUM",
+    "name": "Guam"
+  },
+  {
     "code": "GTM",
     "name": "Guatemala"
+  },
+  {
+    "code": "GGY",
+    "name": "Guernsey"
   },
   {
     "code": "GIN",
@@ -272,8 +364,16 @@
     "name": "Haiti"
   },
   {
+    "code": "HMD",
+    "name": "Heard I. and McDonald Is."
+  },
+  {
     "code": "HND",
     "name": "Honduras"
+  },
+  {
+    "code": "HKG",
+    "name": "Hong Kong"
   },
   {
     "code": "HUN",
@@ -286,6 +386,10 @@
   {
     "code": "IND",
     "name": "India"
+  },
+  {
+    "code": "IOA",
+    "name": "Indian Ocean Ter."
   },
   {
     "code": "IDN",
@@ -304,6 +408,10 @@
     "name": "Ireland"
   },
   {
+    "code": "IMN",
+    "name": "Isle of Man"
+  },
+  {
     "code": "ISR",
     "name": "Israel"
   },
@@ -320,6 +428,10 @@
     "name": "Japan"
   },
   {
+    "code": "JEY",
+    "name": "Jersey"
+  },
+  {
     "code": "JOR",
     "name": "Jordan"
   },
@@ -330,6 +442,10 @@
   {
     "code": "KEN",
     "name": "Kenya"
+  },
+  {
+    "code": "KIR",
+    "name": "Kiribati"
   },
   {
     "code": "KOS",
@@ -368,12 +484,20 @@
     "name": "Libya"
   },
   {
+    "code": "LIE",
+    "name": "Liechtenstein"
+  },
+  {
     "code": "LTU",
     "name": "Lithuania"
   },
   {
     "code": "LUX",
     "name": "Luxembourg"
+  },
+  {
+    "code": "MAC",
+    "name": "Macao"
   },
   {
     "code": "MDG",
@@ -388,20 +512,44 @@
     "name": "Malaysia"
   },
   {
+    "code": "MDV",
+    "name": "Maldives"
+  },
+  {
     "code": "MLI",
     "name": "Mali"
+  },
+  {
+    "code": "MLT",
+    "name": "Malta"
+  },
+  {
+    "code": "MHL",
+    "name": "Marshall Is."
   },
   {
     "code": "MRT",
     "name": "Mauritania"
   },
   {
+    "code": "MUS",
+    "name": "Mauritius"
+  },
+  {
     "code": "MEX",
     "name": "Mexico"
   },
   {
+    "code": "FSM",
+    "name": "Micronesia"
+  },
+  {
     "code": "MDA",
     "name": "Moldova"
+  },
+  {
+    "code": "MCO",
+    "name": "Monaco"
   },
   {
     "code": "MNG",
@@ -410,6 +558,10 @@
   {
     "code": "MNE",
     "name": "Montenegro"
+  },
+  {
+    "code": "MSR",
+    "name": "Montserrat"
   },
   {
     "code": "MAR",
@@ -428,8 +580,16 @@
     "name": "N. Cyprus"
   },
   {
+    "code": "MNP",
+    "name": "N. Mariana Is."
+  },
+  {
     "code": "NAM",
     "name": "Namibia"
+  },
+  {
+    "code": "NRU",
+    "name": "Nauru"
   },
   {
     "code": "NPL",
@@ -460,6 +620,14 @@
     "name": "Nigeria"
   },
   {
+    "code": "NIU",
+    "name": "Niue"
+  },
+  {
+    "code": "NFK",
+    "name": "Norfolk Island"
+  },
+  {
     "code": "PRK",
     "name": "North Korea"
   },
@@ -478,6 +646,10 @@
   {
     "code": "PAK",
     "name": "Pakistan"
+  },
+  {
+    "code": "PLW",
+    "name": "Palau"
   },
   {
     "code": "PSE",
@@ -502,6 +674,10 @@
   {
     "code": "PHL",
     "name": "Philippines"
+  },
+  {
+    "code": "PCN",
+    "name": "Pitcairn Is."
   },
   {
     "code": "POL",
@@ -532,8 +708,32 @@
     "name": "Rwanda"
   },
   {
+    "code": "SGS",
+    "name": "S. Geo. and the Is."
+  },
+  {
     "code": "SSD",
     "name": "S. Sudan"
+  },
+  {
+    "code": "SHN",
+    "name": "Saint Helena"
+  },
+  {
+    "code": "LCA",
+    "name": "Saint Lucia"
+  },
+  {
+    "code": "WSM",
+    "name": "Samoa"
+  },
+  {
+    "code": "SMR",
+    "name": "San Marino"
+  },
+  {
+    "code": "STP",
+    "name": "São Tomé and Principe"
   },
   {
     "code": "SAU",
@@ -548,8 +748,24 @@
     "name": "Serbia"
   },
   {
+    "code": "SYC",
+    "name": "Seychelles"
+  },
+  {
+    "code": "KAS",
+    "name": "Siachen Glacier"
+  },
+  {
     "code": "SLE",
     "name": "Sierra Leone"
+  },
+  {
+    "code": "SGP",
+    "name": "Singapore"
+  },
+  {
+    "code": "SXM",
+    "name": "Sint Maarten"
   },
   {
     "code": "SVK",
@@ -586,6 +802,26 @@
   {
     "code": "LKA",
     "name": "Sri Lanka"
+  },
+  {
+    "code": "BLM",
+    "name": "St-Barthélemy"
+  },
+  {
+    "code": "MAF",
+    "name": "St-Martin"
+  },
+  {
+    "code": "KNA",
+    "name": "St. Kitts and Nevis"
+  },
+  {
+    "code": "SPM",
+    "name": "St. Pierre and Miquelon"
+  },
+  {
+    "code": "VCT",
+    "name": "St. Vin. and Gren."
   },
   {
     "code": "SDN",
@@ -632,6 +868,10 @@
     "name": "Togo"
   },
   {
+    "code": "TON",
+    "name": "Tonga"
+  },
+  {
     "code": "TTO",
     "name": "Trinidad and Tobago"
   },
@@ -646,6 +886,18 @@
   {
     "code": "TKM",
     "name": "Turkmenistan"
+  },
+  {
+    "code": "TCA",
+    "name": "Turks and Caicos Is."
+  },
+  {
+    "code": "TUV",
+    "name": "Tuvalu"
+  },
+  {
+    "code": "VIR",
+    "name": "U.S. Virgin Is."
   },
   {
     "code": "UGA",
@@ -680,6 +932,10 @@
     "name": "Vanuatu"
   },
   {
+    "code": "VAT",
+    "name": "Vatican"
+  },
+  {
     "code": "VEN",
     "name": "Venezuela"
   },
@@ -690,6 +946,10 @@
   {
     "code": "ESH",
     "name": "W. Sahara"
+  },
+  {
+    "code": "WLF",
+    "name": "Wallis and Futuna Is."
   },
   {
     "code": "YEM",

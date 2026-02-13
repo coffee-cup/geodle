@@ -4,17 +4,27 @@
     "name": "Afghanistan",
     "aliases": [],
     "centroid": [
-      66,
-      33.84
+      65.93,
+      33.82
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "ALA",
+    "name": "Åland",
+    "aliases": [],
+    "centroid": [
+      19.95,
+      60.21
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "ALB",
     "name": "Albania",
     "aliases": [],
     "centroid": [
-      20.03,
+      20.05,
       41.13
     ],
     "difficulty": "medium"
@@ -24,28 +34,68 @@
     "name": "Algeria",
     "aliases": [],
     "centroid": [
-      2.61,
-      28.09
+      2.63,
+      28.06
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "ASM",
+    "name": "American Samoa",
+    "aliases": [],
+    "centroid": [
+      -170.72,
+      -14.3
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "AND",
+    "name": "Andorra",
+    "aliases": [],
+    "centroid": [
+      1.56,
+      42.54
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "AGO",
     "name": "Angola",
     "aliases": [],
     "centroid": [
-      17.47,
-      -12.23
+      17.53,
+      -12.27
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "AIA",
+    "name": "Anguilla",
+    "aliases": [],
+    "centroid": [
+      -63.06,
+      18.22
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "ATG",
+    "name": "Antigua and Barb.",
+    "aliases": [],
+    "centroid": [
+      -61.79,
+      17.28
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "ARG",
     "name": "Argentina",
     "aliases": [],
     "centroid": [
-      -64.75,
-      -34.74
+      -64.76,
+      -34.68
     ],
     "difficulty": "easy"
   },
@@ -54,8 +104,28 @@
     "name": "Armenia",
     "aliases": [],
     "centroid": [
-      45.01,
-      40.21
+      44.94,
+      40.29
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "ABW",
+    "name": "Aruba",
+    "aliases": [],
+    "centroid": [
+      -69.98,
+      12.52
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "ATC",
+    "name": "Ashmore and Cartier Is.",
+    "aliases": [],
+    "centroid": [
+      123.58,
+      -12.43
     ],
     "difficulty": "medium"
   },
@@ -64,7 +134,7 @@
     "name": "Australia",
     "aliases": [],
     "centroid": [
-      134.31,
+      134.3,
       -25.76
     ],
     "difficulty": "easy"
@@ -74,8 +144,8 @@
     "name": "Austria",
     "aliases": [],
     "centroid": [
-      14.06,
-      47.62
+      14.11,
+      47.59
     ],
     "difficulty": "medium"
   },
@@ -84,8 +154,8 @@
     "name": "Azerbaijan",
     "aliases": [],
     "centroid": [
-      47.56,
-      40.22
+      47.55,
+      40.29
     ],
     "difficulty": "medium"
   },
@@ -94,18 +164,38 @@
     "name": "Bahamas",
     "aliases": [],
     "centroid": [
-      -77.93,
-      25.51
+      -76.59,
+      24.28
     ],
     "difficulty": "medium"
+  },
+  {
+    "code": "BHR",
+    "name": "Bahrain",
+    "aliases": [],
+    "centroid": [
+      50.54,
+      26.04
+    ],
+    "difficulty": "hard"
   },
   {
     "code": "BGD",
     "name": "Bangladesh",
     "aliases": [],
     "centroid": [
-      90.28,
-      23.83
+      90.25,
+      23.86
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "BRB",
+    "name": "Barbados",
+    "aliases": [],
+    "centroid": [
+      -59.56,
+      13.18
     ],
     "difficulty": "medium"
   },
@@ -114,8 +204,8 @@
     "name": "Belarus",
     "aliases": [],
     "centroid": [
-      27.96,
-      53.5
+      28.01,
+      53.52
     ],
     "difficulty": "medium"
   },
@@ -124,8 +214,8 @@
     "name": "Belgium",
     "aliases": [],
     "centroid": [
-      4.59,
-      50.65
+      4.65,
+      50.64
     ],
     "difficulty": "medium"
   },
@@ -134,7 +224,7 @@
     "name": "Belize",
     "aliases": [],
     "centroid": [
-      -88.7,
+      -88.71,
       17.2
     ],
     "difficulty": "medium"
@@ -144,8 +234,18 @@
     "name": "Benin",
     "aliases": [],
     "centroid": [
-      2.34,
+      2.33,
       9.64
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "BMU",
+    "name": "Bermuda",
+    "aliases": [],
+    "centroid": [
+      -64.75,
+      32.31
     ],
     "difficulty": "medium"
   },
@@ -154,8 +254,8 @@
     "name": "Bhutan",
     "aliases": [],
     "centroid": [
-      90.47,
-      27.43
+      90.4,
+      27.41
     ],
     "difficulty": "medium"
   },
@@ -164,8 +264,8 @@
     "name": "Bolivia",
     "aliases": [],
     "centroid": [
-      -64.65,
-      -16.7
+      -64.7,
+      -16.68
     ],
     "difficulty": "easy"
   },
@@ -174,8 +274,8 @@
     "name": "Bosnia and Herz.",
     "aliases": [],
     "centroid": [
-      17.82,
-      44.18
+      17.77,
+      44.17
     ],
     "difficulty": "medium"
   },
@@ -184,8 +284,18 @@
     "name": "Botswana",
     "aliases": [],
     "centroid": [
-      23.78,
-      -22.08
+      23.81,
+      -22.17
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "IOT",
+    "name": "Br. Indian Ocean Ter.",
+    "aliases": [],
+    "centroid": [
+      72.45,
+      -7.33
     ],
     "difficulty": "medium"
   },
@@ -194,18 +304,28 @@
     "name": "Brazil",
     "aliases": [],
     "centroid": [
-      -53.17,
-      -10.66
+      -53.22,
+      -10.64
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "VGB",
+    "name": "British Virgin Is.",
+    "aliases": [],
+    "centroid": [
+      -64.47,
+      18.53
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "BRN",
     "name": "Brunei",
     "aliases": [],
     "centroid": [
-      114.91,
-      4.69
+      114.72,
+      4.52
     ],
     "difficulty": "hard"
   },
@@ -214,8 +334,8 @@
     "name": "Bulgaria",
     "aliases": [],
     "centroid": [
-      25.19,
-      42.76
+      25.21,
+      42.77
     ],
     "difficulty": "medium"
   },
@@ -224,8 +344,8 @@
     "name": "Burkina Faso",
     "aliases": [],
     "centroid": [
-      -1.78,
-      12.31
+      -1.76,
+      12.27
     ],
     "difficulty": "medium"
   },
@@ -234,18 +354,28 @@
     "name": "Burundi",
     "aliases": [],
     "centroid": [
-      29.91,
-      -3.38
+      29.88,
+      -3.36
     ],
     "difficulty": "hard"
+  },
+  {
+    "code": "CPV",
+    "name": "Cabo Verde",
+    "aliases": [],
+    "centroid": [
+      -23.96,
+      15.95
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "KHM",
     "name": "Cambodia",
     "aliases": [],
     "centroid": [
-      104.87,
-      12.68
+      104.91,
+      12.72
     ],
     "difficulty": "medium"
   },
@@ -254,8 +384,8 @@
     "name": "Cameroon",
     "aliases": [],
     "centroid": [
-      12.61,
-      5.65
+      12.73,
+      5.68
     ],
     "difficulty": "medium"
   },
@@ -264,18 +394,28 @@
     "name": "Canada",
     "aliases": [],
     "centroid": [
-      -96.4,
-      60.48
+      -96.55,
+      60.42
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "CYM",
+    "name": "Cayman Is.",
+    "aliases": [],
+    "centroid": [
+      -80.91,
+      19.43
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "CAF",
     "name": "Central African Rep.",
     "aliases": [],
     "centroid": [
-      20.37,
-      6.55
+      20.46,
+      6.57
     ],
     "difficulty": "medium"
   },
@@ -284,7 +424,7 @@
     "name": "Chad",
     "aliases": [],
     "centroid": [
-      18.57,
+      18.63,
       15.28
     ],
     "difficulty": "easy"
@@ -294,8 +434,8 @@
     "name": "Chile",
     "aliases": [],
     "centroid": [
-      -71.18,
-      -37.31
+      -71.06,
+      -36.08
     ],
     "difficulty": "easy"
   },
@@ -304,8 +444,8 @@
     "name": "China",
     "aliases": [],
     "centroid": [
-      103.45,
-      36.68
+      103.38,
+      36.69
     ],
     "difficulty": "easy"
   },
@@ -314,18 +454,38 @@
     "name": "Colombia",
     "aliases": [],
     "centroid": [
-      -73.07,
-      3.92
+      -73.08,
+      3.9
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "COM",
+    "name": "Comoros",
+    "aliases": [],
+    "centroid": [
+      43.68,
+      -11.88
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "COG",
     "name": "Congo",
     "aliases": [],
     "centroid": [
-      15.14,
+      15.22,
       -0.84
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "COK",
+    "name": "Cook Is.",
+    "aliases": [],
+    "centroid": [
+      -159.79,
+      -21.22
     ],
     "difficulty": "medium"
   },
@@ -334,8 +494,8 @@
     "name": "Costa Rica",
     "aliases": [],
     "centroid": [
-      -84.17,
-      9.97
+      -84.19,
+      9.98
     ],
     "difficulty": "medium"
   },
@@ -344,8 +504,8 @@
     "name": "Côte d'Ivoire",
     "aliases": [],
     "centroid": [
-      -5.61,
-      7.55
+      -5.57,
+      7.63
     ],
     "difficulty": "medium"
   },
@@ -354,8 +514,8 @@
     "name": "Croatia",
     "aliases": [],
     "centroid": [
-      16.57,
-      45.01
+      16.4,
+      45.08
     ],
     "difficulty": "medium"
   },
@@ -364,8 +524,18 @@
     "name": "Cuba",
     "aliases": [],
     "centroid": [
-      -78.93,
-      21.65
+      -78.99,
+      21.64
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "CUW",
+    "name": "Curaçao",
+    "aliases": [],
+    "centroid": [
+      -68.97,
+      12.2
     ],
     "difficulty": "medium"
   },
@@ -374,8 +544,8 @@
     "name": "Cyprus",
     "aliases": [],
     "centroid": [
-      33.04,
-      34.91
+      33.01,
+      34.92
     ],
     "difficulty": "hard"
   },
@@ -384,8 +554,8 @@
     "name": "Czechia",
     "aliases": [],
     "centroid": [
-      15.34,
-      49.78
+      15.32,
+      49.74
     ],
     "difficulty": "medium"
   },
@@ -394,8 +564,8 @@
     "name": "Dem. Rep. Congo",
     "aliases": [],
     "centroid": [
-      23.58,
-      -2.84
+      23.64,
+      -2.87
     ],
     "difficulty": "easy"
   },
@@ -404,8 +574,8 @@
     "name": "Denmark",
     "aliases": [],
     "centroid": [
-      9.89,
-      56.06
+      10.04,
+      55.97
     ],
     "difficulty": "medium"
   },
@@ -414,18 +584,28 @@
     "name": "Djibouti",
     "aliases": [],
     "centroid": [
-      42.5,
-      11.77
+      42.56,
+      11.75
     ],
     "difficulty": "hard"
+  },
+  {
+    "code": "DMA",
+    "name": "Dominica",
+    "aliases": [],
+    "centroid": [
+      -61.36,
+      15.44
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "DOM",
     "name": "Dominican Rep.",
     "aliases": [],
     "centroid": [
-      -70.46,
-      18.89
+      -70.51,
+      18.9
     ],
     "difficulty": "medium"
   },
@@ -434,8 +614,8 @@
     "name": "Ecuador",
     "aliases": [],
     "centroid": [
-      -78.38,
-      -1.45
+      -78.75,
+      -1.42
     ],
     "difficulty": "medium"
   },
@@ -444,8 +624,8 @@
     "name": "Egypt",
     "aliases": [],
     "centroid": [
-      29.86,
-      26.47
+      29.88,
+      26.46
     ],
     "difficulty": "easy"
   },
@@ -455,7 +635,7 @@
     "aliases": [],
     "centroid": [
       -88.87,
-      13.73
+      13.74
     ],
     "difficulty": "medium"
   },
@@ -464,8 +644,8 @@
     "name": "Eq. Guinea",
     "aliases": [],
     "centroid": [
-      10.37,
-      1.65
+      10.34,
+      1.71
     ],
     "difficulty": "medium"
   },
@@ -474,8 +654,8 @@
     "name": "Eritrea",
     "aliases": [],
     "centroid": [
-      38.69,
-      15.43
+      38.86,
+      15.36
     ],
     "difficulty": "medium"
   },
@@ -484,8 +664,8 @@
     "name": "Estonia",
     "aliases": [],
     "centroid": [
-      25.83,
-      58.64
+      25.55,
+      58.67
     ],
     "difficulty": "medium"
   },
@@ -494,8 +674,8 @@
     "name": "eSwatini",
     "aliases": [],
     "centroid": [
-      31.4,
-      -26.49
+      31.48,
+      -26.56
     ],
     "difficulty": "hard"
   },
@@ -504,18 +684,28 @@
     "name": "Ethiopia",
     "aliases": [],
     "centroid": [
-      39.56,
-      8.65
+      39.61,
+      8.61
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "FRO",
+    "name": "Faeroe Is.",
+    "aliases": [],
+    "centroid": [
+      -6.88,
+      62.05
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "FLK",
     "name": "Falkland Is.",
     "aliases": [],
     "centroid": [
-      -59.42,
-      -51.72
+      -59.35,
+      -51.75
     ],
     "difficulty": "medium"
   },
@@ -524,8 +714,8 @@
     "name": "Fiji",
     "aliases": [],
     "centroid": [
-      178.57,
-      -17.32
+      178.51,
+      -17.43
     ],
     "difficulty": "medium"
   },
@@ -534,18 +724,28 @@
     "name": "Finland",
     "aliases": [],
     "centroid": [
-      26.14,
+      26.19,
       64.26
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "PYF",
+    "name": "Fr. Polynesia",
+    "aliases": [],
+    "centroid": [
+      -144.79,
+      -14.71
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "ATF",
     "name": "Fr. S. Antarctic Lands",
     "aliases": [],
     "centroid": [
-      69.53,
-      -49.31
+      69.2,
+      -49.27
     ],
     "difficulty": "medium"
   },
@@ -554,8 +754,8 @@
     "name": "France",
     "aliases": [],
     "centroid": [
-      -6.8,
-      43.14
+      -6.68,
+      42.96
     ],
     "difficulty": "easy"
   },
@@ -564,8 +764,8 @@
     "name": "Gabon",
     "aliases": [],
     "centroid": [
-      11.69,
-      -0.65
+      11.79,
+      -0.59
     ],
     "difficulty": "medium"
   },
@@ -574,8 +774,8 @@
     "name": "Gambia",
     "aliases": [],
     "centroid": [
-      -15.43,
-      13.48
+      -15.4,
+      13.45
     ],
     "difficulty": "medium"
   },
@@ -584,7 +784,7 @@
     "name": "Georgia",
     "aliases": [],
     "centroid": [
-      43.5,
+      43.52,
       42.17
     ],
     "difficulty": "medium"
@@ -594,8 +794,8 @@
     "name": "Germany",
     "aliases": [],
     "centroid": [
-      10.27,
-      51.08
+      10.36,
+      51.05
     ],
     "difficulty": "easy"
   },
@@ -604,8 +804,8 @@
     "name": "Ghana",
     "aliases": [],
     "centroid": [
-      -1.24,
-      7.92
+      -1.22,
+      7.95
     ],
     "difficulty": "medium"
   },
@@ -614,8 +814,8 @@
     "name": "Greece",
     "aliases": [],
     "centroid": [
-      22.72,
-      39.04
+      22.96,
+      39.05
     ],
     "difficulty": "medium"
   },
@@ -624,8 +824,28 @@
     "name": "Greenland",
     "aliases": [],
     "centroid": [
-      -41.97,
-      73.15
+      -41.81,
+      73.08
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "GRD",
+    "name": "Grenada",
+    "aliases": [],
+    "centroid": [
+      -61.68,
+      12.12
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "GUM",
+    "name": "Guam",
+    "aliases": [],
+    "centroid": [
+      144.77,
+      13.44
     ],
     "difficulty": "medium"
   },
@@ -635,7 +855,17 @@
     "aliases": [],
     "centroid": [
       -90.37,
-      15.7
+      15.69
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "GGY",
+    "name": "Guernsey",
+    "aliases": [],
+    "centroid": [
+      -2.57,
+      49.47
     ],
     "difficulty": "medium"
   },
@@ -644,8 +874,8 @@
     "name": "Guinea",
     "aliases": [],
     "centroid": [
-      -11.06,
-      10.45
+      -10.93,
+      10.44
     ],
     "difficulty": "medium"
   },
@@ -654,8 +884,8 @@
     "name": "Guinea-Bissau",
     "aliases": [],
     "centroid": [
-      -15.11,
-      12.02
+      -14.95,
+      12.05
     ],
     "difficulty": "hard"
   },
@@ -664,7 +894,7 @@
     "name": "Guyana",
     "aliases": [],
     "centroid": [
-      -58.97,
+      -58.98,
       4.79
     ],
     "difficulty": "medium"
@@ -674,8 +904,18 @@
     "name": "Haiti",
     "aliases": [],
     "centroid": [
-      -72.66,
-      18.9
+      -72.69,
+      18.93
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "HMD",
+    "name": "Heard I. and McDonald Is.",
+    "aliases": [],
+    "centroid": [
+      73.52,
+      -53.09
     ],
     "difficulty": "medium"
   },
@@ -684,8 +924,18 @@
     "name": "Honduras",
     "aliases": [],
     "centroid": [
-      -86.59,
+      -86.62,
       14.83
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "HKG",
+    "name": "Hong Kong",
+    "aliases": [],
+    "centroid": [
+      114.11,
+      22.4
     ],
     "difficulty": "medium"
   },
@@ -694,8 +944,8 @@
     "name": "Hungary",
     "aliases": [],
     "centroid": [
-      19.34,
-      47.2
+      19.38,
+      47.17
     ],
     "difficulty": "medium"
   },
@@ -704,8 +954,8 @@
     "name": "Iceland",
     "aliases": [],
     "centroid": [
-      -18.77,
-      65.08
+      -18.58,
+      65
     ],
     "difficulty": "medium"
   },
@@ -714,18 +964,28 @@
     "name": "India",
     "aliases": [],
     "centroid": [
-      79.54,
-      22.82
+      79.56,
+      22.78
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "IOA",
+    "name": "Indian Ocean Ter.",
+    "aliases": [],
+    "centroid": [
+      104.86,
+      -10.66
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "IDN",
     "name": "Indonesia",
     "aliases": [],
     "centroid": [
-      117.36,
-      -2.27
+      117.18,
+      -2.26
     ],
     "difficulty": "easy"
   },
@@ -734,8 +994,8 @@
     "name": "Iran",
     "aliases": [],
     "centroid": [
-      54.45,
-      32.47
+      54.44,
+      32.53
     ],
     "difficulty": "easy"
   },
@@ -744,7 +1004,7 @@
     "name": "Iraq",
     "aliases": [],
     "centroid": [
-      43.79,
+      43.77,
       33.01
     ],
     "difficulty": "easy"
@@ -754,8 +1014,18 @@
     "name": "Ireland",
     "aliases": [],
     "centroid": [
-      -8.02,
-      53.17
+      -8.15,
+      53.16
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "IMN",
+    "name": "Isle of Man",
+    "aliases": [],
+    "centroid": [
+      -4.54,
+      54.22
     ],
     "difficulty": "medium"
   },
@@ -764,8 +1034,8 @@
     "name": "Israel",
     "aliases": [],
     "centroid": [
-      35,
-      31.48
+      34.99,
+      31.43
     ],
     "difficulty": "medium"
   },
@@ -774,8 +1044,8 @@
     "name": "Italy",
     "aliases": [],
     "centroid": [
-      12.27,
-      42.67
+      12.2,
+      42.72
     ],
     "difficulty": "easy"
   },
@@ -784,8 +1054,8 @@
     "name": "Jamaica",
     "aliases": [],
     "centroid": [
-      -77.32,
-      18.14
+      -77.31,
+      18.16
     ],
     "difficulty": "medium"
   },
@@ -794,17 +1064,27 @@
     "name": "Japan",
     "aliases": [],
     "centroid": [
-      137.71,
-      37.54
+      137.66,
+      37.46
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "JEY",
+    "name": "Jersey",
+    "aliases": [],
+    "centroid": [
+      -2.13,
+      49.22
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "JOR",
     "name": "Jordan",
     "aliases": [],
     "centroid": [
-      36.77,
+      36.76,
       31.24
     ],
     "difficulty": "medium"
@@ -814,8 +1094,8 @@
     "name": "Kazakhstan",
     "aliases": [],
     "centroid": [
-      67.24,
-      48.41
+      67.25,
+      48.36
     ],
     "difficulty": "easy"
   },
@@ -824,8 +1104,18 @@
     "name": "Kenya",
     "aliases": [],
     "centroid": [
-      37.79,
+      37.8,
       0.6
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "KIR",
+    "name": "Kiribati",
+    "aliases": [],
+    "centroid": [
+      -167.92,
+      0.89
     ],
     "difficulty": "medium"
   },
@@ -834,8 +1124,8 @@
     "name": "Kosovo",
     "aliases": [],
     "centroid": [
-      20.9,
-      42.58
+      20.87,
+      42.57
     ],
     "difficulty": "medium"
   },
@@ -844,8 +1134,8 @@
     "name": "Kuwait",
     "aliases": [],
     "centroid": [
-      47.6,
-      29.31
+      47.59,
+      29.33
     ],
     "difficulty": "hard"
   },
@@ -854,8 +1144,8 @@
     "name": "Kyrgyzstan",
     "aliases": [],
     "centroid": [
-      74.59,
-      41.52
+      74.51,
+      41.47
     ],
     "difficulty": "medium"
   },
@@ -864,8 +1154,8 @@
     "name": "Laos",
     "aliases": [],
     "centroid": [
-      103.79,
-      18.43
+      103.77,
+      18.49
     ],
     "difficulty": "medium"
   },
@@ -874,8 +1164,8 @@
     "name": "Latvia",
     "aliases": [],
     "centroid": [
-      24.84,
-      56.82
+      24.92,
+      56.86
     ],
     "difficulty": "medium"
   },
@@ -884,8 +1174,8 @@
     "name": "Lebanon",
     "aliases": [],
     "centroid": [
-      35.87,
-      33.91
+      35.88,
+      33.92
     ],
     "difficulty": "hard"
   },
@@ -894,8 +1184,8 @@
     "name": "Lesotho",
     "aliases": [],
     "centroid": [
-      28.17,
-      -29.62
+      28.23,
+      -29.58
     ],
     "difficulty": "medium"
   },
@@ -904,8 +1194,8 @@
     "name": "Liberia",
     "aliases": [],
     "centroid": [
-      -9.41,
-      6.43
+      -9.32,
+      6.45
     ],
     "difficulty": "medium"
   },
@@ -914,18 +1204,28 @@
     "name": "Libya",
     "aliases": [],
     "centroid": [
-      18.03,
-      26.99
+      18.07,
+      27.02
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "LIE",
+    "name": "Liechtenstein",
+    "aliases": [],
+    "centroid": [
+      9.54,
+      47.14
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "LTU",
     "name": "Lithuania",
     "aliases": [],
     "centroid": [
-      23.89,
-      55.28
+      23.9,
+      55.32
     ],
     "difficulty": "medium"
   },
@@ -934,18 +1234,28 @@
     "name": "Luxembourg",
     "aliases": [],
     "centroid": [
-      5.97,
+      6.07,
       49.77
     ],
     "difficulty": "hard"
+  },
+  {
+    "code": "MAC",
+    "name": "Macao",
+    "aliases": [],
+    "centroid": [
+      113.51,
+      22.22
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "MDG",
     "name": "Madagascar",
     "aliases": [],
     "centroid": [
-      46.73,
-      -19.3
+      46.74,
+      -19.32
     ],
     "difficulty": "medium"
   },
@@ -954,8 +1264,8 @@
     "name": "Malawi",
     "aliases": [],
     "centroid": [
-      34.19,
-      -13.16
+      34.28,
+      -13.2
     ],
     "difficulty": "medium"
   },
@@ -965,9 +1275,19 @@
     "aliases": [],
     "centroid": [
       109.7,
-      3.75
+      3.81
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "MDV",
+    "name": "Maldives",
+    "aliases": [],
+    "centroid": [
+      73.46,
+      3.73
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "MLI",
@@ -975,37 +1295,87 @@
     "aliases": [],
     "centroid": [
       -3.59,
-      17.24
+      17.32
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "MLT",
+    "name": "Malta",
+    "aliases": [],
+    "centroid": [
+      14.41,
+      35.92
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "MHL",
+    "name": "Marshall Is.",
+    "aliases": [],
+    "centroid": [
+      170.34,
+      7
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "MRT",
     "name": "Mauritania",
     "aliases": [],
     "centroid": [
-      -10.35,
-      20.18
+      -10.37,
+      20.22
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "MUS",
+    "name": "Mauritius",
+    "aliases": [],
+    "centroid": [
+      57.57,
+      -20.28
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "MEX",
     "name": "Mexico",
     "aliases": [],
     "centroid": [
-      -102.22,
-      23.91
+      -102.17,
+      23.92
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "FSM",
+    "name": "Micronesia",
+    "aliases": [],
+    "centroid": [
+      153.32,
+      7.53
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "MDA",
     "name": "Moldova",
     "aliases": [],
     "centroid": [
-      28.42,
-      47.2
+      28.47,
+      47.19
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "MCO",
+    "name": "Monaco",
+    "aliases": [],
+    "centroid": [
+      7.41,
+      43.75
     ],
     "difficulty": "medium"
   },
@@ -1014,8 +1384,8 @@
     "name": "Mongolia",
     "aliases": [],
     "centroid": [
-      103.02,
-      46.95
+      103.12,
+      46.96
     ],
     "difficulty": "easy"
   },
@@ -1024,18 +1394,28 @@
     "name": "Montenegro",
     "aliases": [],
     "centroid": [
-      19.29,
+      19.24,
       42.79
     ],
     "difficulty": "hard"
+  },
+  {
+    "code": "MSR",
+    "name": "Montserrat",
+    "aliases": [],
+    "centroid": [
+      -62.19,
+      16.74
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "MAR",
     "name": "Morocco",
     "aliases": [],
     "centroid": [
-      -8.69,
-      29.82
+      -8.73,
+      29.77
     ],
     "difficulty": "easy"
   },
@@ -1044,8 +1424,8 @@
     "name": "Mozambique",
     "aliases": [],
     "centroid": [
-      35.54,
-      -17.15
+      35.6,
+      -17.2
     ],
     "difficulty": "easy"
   },
@@ -1054,8 +1434,8 @@
     "name": "Myanmar",
     "aliases": [],
     "centroid": [
-      96.51,
-      20.94
+      96.49,
+      21.11
     ],
     "difficulty": "easy"
   },
@@ -1064,8 +1444,18 @@
     "name": "N. Cyprus",
     "aliases": [],
     "centroid": [
-      33.56,
-      35.27
+      33.57,
+      35.26
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "MNP",
+    "name": "N. Mariana Is.",
+    "aliases": [],
+    "centroid": [
+      145.62,
+      15.82
     ],
     "difficulty": "medium"
   },
@@ -1074,18 +1464,28 @@
     "name": "Namibia",
     "aliases": [],
     "centroid": [
-      17.14,
-      -22.04
+      17.2,
+      -22.07
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "NRU",
+    "name": "Nauru",
+    "aliases": [],
+    "centroid": [
+      166.93,
+      -0.52
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "NPL",
     "name": "Nepal",
     "aliases": [],
     "centroid": [
-      84.04,
-      28.25
+      83.95,
+      28.26
     ],
     "difficulty": "medium"
   },
@@ -1094,8 +1494,8 @@
     "name": "Netherlands",
     "aliases": [],
     "centroid": [
-      5.5,
-      52.29
+      4.99,
+      52.23
     ],
     "difficulty": "medium"
   },
@@ -1104,8 +1504,8 @@
     "name": "New Caledonia",
     "aliases": [],
     "centroid": [
-      165.53,
-      -21.26
+      165.68,
+      -21.3
     ],
     "difficulty": "medium"
   },
@@ -1114,8 +1514,8 @@
     "name": "New Zealand",
     "aliases": [],
     "centroid": [
-      172.95,
-      -41.55
+      172.92,
+      -41.7
     ],
     "difficulty": "easy"
   },
@@ -1124,8 +1524,8 @@
     "name": "Nicaragua",
     "aliases": [],
     "centroid": [
-      -85.02,
-      12.85
+      -85.03,
+      12.84
     ],
     "difficulty": "medium"
   },
@@ -1134,8 +1534,8 @@
     "name": "Niger",
     "aliases": [],
     "centroid": [
-      9.27,
-      17.34
+      9.33,
+      17.41
     ],
     "difficulty": "easy"
   },
@@ -1144,18 +1544,38 @@
     "name": "Nigeria",
     "aliases": [],
     "centroid": [
-      7.99,
-      9.54
+      8.08,
+      9.59
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "NIU",
+    "name": "Niue",
+    "aliases": [],
+    "centroid": [
+      -169.87,
+      -19.05
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "NFK",
+    "name": "Norfolk Island",
+    "aliases": [],
+    "centroid": [
+      167.95,
+      -29.05
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "PRK",
     "name": "North Korea",
     "aliases": [],
     "centroid": [
-      127.13,
-      40.13
+      127.16,
+      40.14
     ],
     "difficulty": "medium"
   },
@@ -1164,8 +1584,8 @@
     "name": "North Macedonia",
     "aliases": [],
     "centroid": [
-      21.7,
-      41.61
+      21.68,
+      41.6
     ],
     "difficulty": "hard"
   },
@@ -1174,8 +1594,8 @@
     "name": "Norway",
     "aliases": [],
     "centroid": [
-      12.83,
-      66.65
+      12.75,
+      66.36
     ],
     "difficulty": "easy"
   },
@@ -1184,7 +1604,7 @@
     "name": "Oman",
     "aliases": [],
     "centroid": [
-      56.07,
+      56.06,
       20.59
     ],
     "difficulty": "medium"
@@ -1194,18 +1614,28 @@
     "name": "Pakistan",
     "aliases": [],
     "centroid": [
-      69.23,
-      29.91
+      69.17,
+      29.88
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "PLW",
+    "name": "Palau",
+    "aliases": [],
+    "centroid": [
+      134.41,
+      7.29
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "PSE",
     "name": "Palestine",
     "aliases": [],
     "centroid": [
-      35.27,
-      31.94
+      35.2,
+      31.92
     ],
     "difficulty": "hard"
   },
@@ -1214,8 +1644,8 @@
     "name": "Panama",
     "aliases": [],
     "centroid": [
-      -80.11,
-      8.53
+      -80.12,
+      8.52
     ],
     "difficulty": "medium"
   },
@@ -1224,8 +1654,8 @@
     "name": "Papua New Guinea",
     "aliases": [],
     "centroid": [
-      145.31,
-      -6.46
+      145.2,
+      -6.47
     ],
     "difficulty": "easy"
   },
@@ -1234,8 +1664,8 @@
     "name": "Paraguay",
     "aliases": [],
     "centroid": [
-      -58.43,
-      -23.23
+      -58.44,
+      -23.21
     ],
     "difficulty": "medium"
   },
@@ -1244,8 +1674,8 @@
     "name": "Peru",
     "aliases": [],
     "centroid": [
-      -74.43,
-      -9.15
+      -74.42,
+      -9.11
     ],
     "difficulty": "easy"
   },
@@ -1254,18 +1684,28 @@
     "name": "Philippines",
     "aliases": [],
     "centroid": [
-      122.94,
-      11.72
+      122.92,
+      11.73
     ],
     "difficulty": "easy"
+  },
+  {
+    "code": "PCN",
+    "name": "Pitcairn Is.",
+    "aliases": [],
+    "centroid": [
+      -128.32,
+      -24.37
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "POL",
     "name": "Poland",
     "aliases": [],
     "centroid": [
-      19.34,
-      52.13
+      19.42,
+      52.11
     ],
     "difficulty": "easy"
   },
@@ -1274,7 +1714,7 @@
     "name": "Portugal",
     "aliases": [],
     "centroid": [
-      -8.06,
+      -8.53,
       39.61
     ],
     "difficulty": "medium"
@@ -1284,8 +1724,8 @@
     "name": "Puerto Rico",
     "aliases": [],
     "centroid": [
-      -66.48,
-      18.24
+      -66.47,
+      18.23
     ],
     "difficulty": "medium"
   },
@@ -1295,7 +1735,7 @@
     "aliases": [],
     "centroid": [
       51.18,
-      25.32
+      25.3
     ],
     "difficulty": "hard"
   },
@@ -1304,7 +1744,7 @@
     "name": "Romania",
     "aliases": [],
     "centroid": [
-      24.95,
+      24.98,
       45.85
     ],
     "difficulty": "medium"
@@ -1314,8 +1754,8 @@
     "name": "Russia",
     "aliases": [],
     "centroid": [
-      95.79,
-      66.07
+      95.64,
+      66.03
     ],
     "difficulty": "easy"
   },
@@ -1325,17 +1765,77 @@
     "aliases": [],
     "centroid": [
       29.92,
-      -2.01
+      -1.99
     ],
     "difficulty": "hard"
+  },
+  {
+    "code": "SGS",
+    "name": "S. Geo. and the Is.",
+    "aliases": [],
+    "centroid": [
+      -36.49,
+      -54.46
+    ],
+    "difficulty": "medium"
   },
   {
     "code": "SSD",
     "name": "S. Sudan",
     "aliases": [],
     "centroid": [
-      30.2,
-      7.29
+      30.25,
+      7.31
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "SHN",
+    "name": "Saint Helena",
+    "aliases": [],
+    "centroid": [
+      -9.67,
+      -12.38
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "LCA",
+    "name": "Saint Lucia",
+    "aliases": [],
+    "centroid": [
+      -60.97,
+      13.89
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "WSM",
+    "name": "Samoa",
+    "aliases": [],
+    "centroid": [
+      -172.17,
+      -13.75
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "SMR",
+    "name": "San Marino",
+    "aliases": [],
+    "centroid": [
+      12.46,
+      43.94
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "STP",
+    "name": "São Tomé and Principe",
+    "aliases": [],
+    "centroid": [
+      6.72,
+      0.44
     ],
     "difficulty": "medium"
   },
@@ -1344,7 +1844,7 @@
     "name": "Saudi Arabia",
     "aliases": [],
     "centroid": [
-      44.64,
+      44.66,
       24.09
     ],
     "difficulty": "easy"
@@ -1354,8 +1854,8 @@
     "name": "Senegal",
     "aliases": [],
     "centroid": [
-      -14.51,
-      14.35
+      -14.47,
+      14.36
     ],
     "difficulty": "medium"
   },
@@ -1364,8 +1864,28 @@
     "name": "Serbia",
     "aliases": [],
     "centroid": [
-      20.84,
-      44.22
+      20.81,
+      44.21
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "SYC",
+    "name": "Seychelles",
+    "aliases": [],
+    "centroid": [
+      55.48,
+      -4.66
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "KAS",
+    "name": "Siachen Glacier",
+    "aliases": [],
+    "centroid": [
+      77.18,
+      35.39
     ],
     "difficulty": "medium"
   },
@@ -1374,8 +1894,28 @@
     "name": "Sierra Leone",
     "aliases": [],
     "centroid": [
-      -11.8,
-      8.53
+      -11.79,
+      8.56
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "SGP",
+    "name": "Singapore",
+    "aliases": [],
+    "centroid": [
+      103.82,
+      1.36
+    ],
+    "difficulty": "hard"
+  },
+  {
+    "code": "SXM",
+    "name": "Sint Maarten",
+    "aliases": [],
+    "centroid": [
+      -63.06,
+      18.05
     ],
     "difficulty": "medium"
   },
@@ -1384,8 +1924,8 @@
     "name": "Slovakia",
     "aliases": [],
     "centroid": [
-      19.5,
-      48.73
+      19.47,
+      48.71
     ],
     "difficulty": "medium"
   },
@@ -1394,8 +1934,8 @@
     "name": "Slovenia",
     "aliases": [],
     "centroid": [
-      14.93,
-      46.13
+      14.8,
+      46.12
     ],
     "difficulty": "hard"
   },
@@ -1404,8 +1944,8 @@
     "name": "Solomon Is.",
     "aliases": [],
     "centroid": [
-      159.96,
-      -8.85
+      159.62,
+      -8.92
     ],
     "difficulty": "medium"
   },
@@ -1414,7 +1954,7 @@
     "name": "Somalia",
     "aliases": [],
     "centroid": [
-      45.7,
+      45.68,
       4.74
     ],
     "difficulty": "easy"
@@ -1424,8 +1964,8 @@
     "name": "Somaliland",
     "aliases": [],
     "centroid": [
-      46.23,
-      9.76
+      46.25,
+      9.74
     ],
     "difficulty": "medium"
   },
@@ -1434,8 +1974,8 @@
     "name": "South Africa",
     "aliases": [],
     "centroid": [
-      25.16,
-      -28.92
+      25.19,
+      -28.97
     ],
     "difficulty": "easy"
   },
@@ -1444,8 +1984,8 @@
     "name": "South Korea",
     "aliases": [],
     "centroid": [
-      127.82,
-      36.42
+      127.83,
+      36.37
     ],
     "difficulty": "medium"
   },
@@ -1454,8 +1994,8 @@
     "name": "Spain",
     "aliases": [],
     "centroid": [
-      -3.62,
-      40.32
+      -3.7,
+      40.21
     ],
     "difficulty": "easy"
   },
@@ -1464,8 +2004,58 @@
     "name": "Sri Lanka",
     "aliases": [],
     "centroid": [
-      80.67,
-      7.7
+      80.7,
+      7.61
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "BLM",
+    "name": "St-Barthélemy",
+    "aliases": [],
+    "centroid": [
+      -62.84,
+      17.9
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "MAF",
+    "name": "St-Martin",
+    "aliases": [],
+    "centroid": [
+      -63.06,
+      18.09
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "KNA",
+    "name": "St. Kitts and Nevis",
+    "aliases": [],
+    "centroid": [
+      -62.69,
+      17.26
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "SPM",
+    "name": "St. Pierre and Miquelon",
+    "aliases": [],
+    "centroid": [
+      -56.3,
+      46.92
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "VCT",
+    "name": "St. Vin. and Gren.",
+    "aliases": [],
+    "centroid": [
+      -61.2,
+      13.22
     ],
     "difficulty": "medium"
   },
@@ -1474,7 +2064,7 @@
     "name": "Sudan",
     "aliases": [],
     "centroid": [
-      29.83,
+      29.91,
       15.97
     ],
     "difficulty": "easy"
@@ -1485,7 +2075,7 @@
     "aliases": [],
     "centroid": [
       -55.91,
-      4.12
+      4.13
     ],
     "difficulty": "medium"
   },
@@ -1494,8 +2084,8 @@
     "name": "Sweden",
     "aliases": [],
     "centroid": [
-      16.11,
-      62.42
+      16.27,
+      62.38
     ],
     "difficulty": "easy"
   },
@@ -1504,8 +2094,8 @@
     "name": "Switzerland",
     "aliases": [],
     "centroid": [
-      8.12,
-      46.79
+      8.21,
+      46.8
     ],
     "difficulty": "medium"
   },
@@ -1514,8 +2104,8 @@
     "name": "Syria",
     "aliases": [],
     "centroid": [
-      38.52,
-      35.01
+      38.48,
+      35.02
     ],
     "difficulty": "medium"
   },
@@ -1524,8 +2114,8 @@
     "name": "Taiwan",
     "aliases": [],
     "centroid": [
-      120.97,
-      23.74
+      120.95,
+      23.75
     ],
     "difficulty": "medium"
   },
@@ -1534,8 +2124,8 @@
     "name": "Tajikistan",
     "aliases": [],
     "centroid": [
-      71.05,
-      38.59
+      71.03,
+      38.54
     ],
     "difficulty": "medium"
   },
@@ -1544,8 +2134,8 @@
     "name": "Tanzania",
     "aliases": [],
     "centroid": [
-      34.74,
-      -6.25
+      34.8,
+      -6.27
     ],
     "difficulty": "easy"
   },
@@ -1555,7 +2145,7 @@
     "aliases": [],
     "centroid": [
       101,
-      14.98
+      15.08
     ],
     "difficulty": "easy"
   },
@@ -1564,8 +2154,8 @@
     "name": "Timor-Leste",
     "aliases": [],
     "centroid": [
-      125.97,
-      -8.77
+      125.85,
+      -8.83
     ],
     "difficulty": "hard"
   },
@@ -1574,8 +2164,18 @@
     "name": "Togo",
     "aliases": [],
     "centroid": [
-      1,
-      8.43
+      0.96,
+      8.52
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "TON",
+    "name": "Tonga",
+    "aliases": [],
+    "centroid": [
+      -174.8,
+      -20.42
     ],
     "difficulty": "medium"
   },
@@ -1584,8 +2184,8 @@
     "name": "Trinidad and Tobago",
     "aliases": [],
     "centroid": [
-      -61.33,
-      10.43
+      -61.27,
+      10.46
     ],
     "difficulty": "hard"
   },
@@ -1594,8 +2194,8 @@
     "name": "Tunisia",
     "aliases": [],
     "centroid": [
-      9.54,
-      34.14
+      9.56,
+      34.09
     ],
     "difficulty": "medium"
   },
@@ -1604,8 +2204,8 @@
     "name": "Turkey",
     "aliases": [],
     "centroid": [
-      35.12,
-      39.15
+      35.17,
+      39.14
     ],
     "difficulty": "easy"
   },
@@ -1614,8 +2214,38 @@
     "name": "Turkmenistan",
     "aliases": [],
     "centroid": [
-      59.35,
-      39.1
+      59.45,
+      39.13
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "TCA",
+    "name": "Turks and Caicos Is.",
+    "aliases": [],
+    "centroid": [
+      -71.97,
+      21.83
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "TUV",
+    "name": "Tuvalu",
+    "aliases": [],
+    "centroid": [
+      179.21,
+      -8.5
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "VIR",
+    "name": "U.S. Virgin Is.",
+    "aliases": [],
+    "centroid": [
+      -64.8,
+      17.95
     ],
     "difficulty": "medium"
   },
@@ -1624,8 +2254,8 @@
     "name": "Uganda",
     "aliases": [],
     "centroid": [
-      32.36,
-      1.3
+      32.37,
+      1.27
     ],
     "difficulty": "medium"
   },
@@ -1634,8 +2264,8 @@
     "name": "Ukraine",
     "aliases": [],
     "centroid": [
-      31.29,
-      49.19
+      31.32,
+      49.2
     ],
     "difficulty": "easy"
   },
@@ -1644,8 +2274,8 @@
     "name": "United Arab Emirates",
     "aliases": [],
     "centroid": [
-      54.2,
-      23.87
+      54.29,
+      23.91
     ],
     "difficulty": "medium"
   },
@@ -1655,7 +2285,7 @@
     "aliases": [],
     "centroid": [
       -2.76,
-      53.81
+      54.01
     ],
     "difficulty": "easy"
   },
@@ -1664,8 +2294,8 @@
     "name": "United States of America",
     "aliases": [],
     "centroid": [
-      -103.57,
-      44.76
+      -103.63,
+      44.74
     ],
     "difficulty": "easy"
   },
@@ -1674,8 +2304,8 @@
     "name": "Uruguay",
     "aliases": [],
     "centroid": [
-      -56.01,
-      -32.77
+      -56.03,
+      -32.79
     ],
     "difficulty": "medium"
   },
@@ -1684,8 +2314,8 @@
     "name": "Uzbekistan",
     "aliases": [],
     "centroid": [
-      63.37,
-      41.77
+      63.3,
+      41.78
     ],
     "difficulty": "medium"
   },
@@ -1694,8 +2324,18 @@
     "name": "Vanuatu",
     "aliases": [],
     "centroid": [
-      167.07,
-      -15.54
+      167.68,
+      -16.22
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "VAT",
+    "name": "Vatican",
+    "aliases": [],
+    "centroid": [
+      12.43,
+      41.9
     ],
     "difficulty": "medium"
   },
@@ -1704,8 +2344,8 @@
     "name": "Venezuela",
     "aliases": [],
     "centroid": [
-      -66.15,
-      7.16
+      -66.17,
+      7.12
     ],
     "difficulty": "easy"
   },
@@ -1714,8 +2354,8 @@
     "name": "Vietnam",
     "aliases": [],
     "centroid": [
-      106.33,
-      16.56
+      106.35,
+      16.54
     ],
     "difficulty": "easy"
   },
@@ -1724,8 +2364,18 @@
     "name": "W. Sahara",
     "aliases": [],
     "centroid": [
-      -12.19,
-      24.28
+      -12.27,
+      24.21
+    ],
+    "difficulty": "medium"
+  },
+  {
+    "code": "WLF",
+    "name": "Wallis and Futuna Is.",
+    "aliases": [],
+    "centroid": [
+      -177.34,
+      -13.89
     ],
     "difficulty": "medium"
   },
@@ -1734,7 +2384,7 @@
     "name": "Yemen",
     "aliases": [],
     "centroid": [
-      47.51,
+      47.57,
       15.92
     ],
     "difficulty": "medium"
@@ -1744,8 +2394,8 @@
     "name": "Zambia",
     "aliases": [],
     "centroid": [
-      27.76,
-      -13.39
+      27.81,
+      -13.46
     ],
     "difficulty": "easy"
   },
@@ -1754,8 +2404,8 @@
     "name": "Zimbabwe",
     "aliases": [],
     "centroid": [
-      29.79,
-      -18.9
+      29.85,
+      -19
     ],
     "difficulty": "medium"
   }
