@@ -1,12 +1,12 @@
 import type { GuessResult } from "@/types";
 
-const DISTANCE_THRESHOLDS = [500, 1500, 3000, 6000, 12000];
+const DISTANCE_THRESHOLDS = [1000, 3000];
 
 function guessToEmoji(guess: GuessResult): string {
   if (guess.correct) return "🟩";
   const idx = DISTANCE_THRESHOLDS.findIndex((t) => guess.distance_km <= t);
-  if (idx === -1) return "⬛";
-  return ["🟩", "🟨", "🟧", "🟥", "🟫"][idx];
+  if (idx === -1) return "🟥";
+  return ["🟨", "🟧"][idx];
 }
 
 export function buildShareText(

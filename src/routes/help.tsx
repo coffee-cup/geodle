@@ -62,11 +62,10 @@ function HelpPage() {
               how close your guess is.
             </p>
             <div className="space-y-1 text-sm text-ink-muted">
-              <p><span className="inline-block w-6">🟩</span> Very close (under 500 km)</p>
-              <p><span className="inline-block w-6">🟨</span> Close (under 1,500 km)</p>
-              <p><span className="inline-block w-6">🟧</span> Moderate (under 3,000 km)</p>
-              <p><span className="inline-block w-6">🟥</span> Far (under 6,000 km)</p>
-              <p><span className="inline-block w-6">⬛</span> Very far</p>
+              <p><span className="inline-block w-6">🟩</span> Correct</p>
+              <p><span className="inline-block w-6">🟨</span> Under 1,000 km</p>
+              <p><span className="inline-block w-6">🟧</span> Under 3,000 km</p>
+              <p><span className="inline-block w-6">🟥</span> 3,000+ km</p>
             </div>
           </div>
         </div>

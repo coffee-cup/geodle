@@ -38,7 +38,9 @@ Daily country silhouette guessing game (Wordle-style).
 
 - NEVER run the dev server from Claude — let the user run it manually
 - Dev server runs on port 5543
+- Always use `mise run` for tasks — never call pnpm/bun/vitest directly
 - `mise run check` — typecheck after changes
+- `mise run test` — run tests
 
 ## Testing
 

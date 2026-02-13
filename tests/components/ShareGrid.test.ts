@@ -30,19 +30,17 @@ describe("buildShareText", () => {
     ];
     const text = buildShareText(guesses, 42, false);
     expect(text).toContain("X/6");
-    expect(text).toContain("⬛");
+    expect(text).toContain("🟥");
   });
 
   it("distance thresholds produce correct emojis", () => {
     const guesses = [
-      makeGuess(400),   // ≤500 → 🟩
-      makeGuess(1400),  // ≤1500 → 🟨
+      makeGuess(900),   // ≤1000 → 🟨
       makeGuess(2900),  // ≤3000 → 🟧
-      makeGuess(5900),  // ≤6000 → 🟥
-      makeGuess(13000), // >12000 → ⬛
+      makeGuess(5000),  // >3000 → 🟥
       makeGuess(0, true),
     ];
     const text = buildShareText(guesses, 1, true);
-    expect(text).toContain("🟩🟨🟧🟥⬛🟩");
+    expect(text).toContain("🟨🟧🟥🟩");
   });
 });
