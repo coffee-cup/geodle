@@ -9,7 +9,7 @@ const linkActive =
 export function Header() {
   return (
     <header className="flex flex-col items-center border-b-2 border-border">
-      <div className="flex items-center justify-between w-full px-4 py-2.5">
+      <div className="flex items-center justify-between w-full px-4 pt-4 pb-2.5">
         <ThemeToggle />
         <Link to="/" className="text-3xl font-serif italic text-ink underline decoration-wavy decoration-accent underline-offset-4 decoration-1">
           Geodle
