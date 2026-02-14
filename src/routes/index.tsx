@@ -36,19 +36,26 @@ function GamePage() {
       <Header />
       <main className="flex-1 flex flex-col items-center gap-6 px-4 py-8 max-w-lg mx-auto w-full">
         <Silhouette svg={silhouette.svg} />
-        <GuessInput onSubmit={handleGuess} disabled={gameOver} />
-        <GuessList guesses={game.guesses} maxGuesses={6} />
-        {gameOver && !modalOpen && (
-          <div className="flex flex-col items-center gap-2">
-            <button
-              onClick={() => setModalOpen(true)}
-              className="text-accent hover:text-accent-hover font-medium underline underline-offset-2 transition-colors"
-            >
-              View results
-            </button>
-            <Countdown />
-          </div>
-        )}
+        <div
+          data-game-area=""
+          ref={(el) => {
+            if (el) document.getElementById("geodle-hydration")?.remove();
+          }}
+        >
+          <GuessInput onSubmit={handleGuess} disabled={gameOver} />
+          <GuessList guesses={game.guesses} maxGuesses={6} />
+          {gameOver && !modalOpen && (
+            <div className="flex flex-col items-center gap-2">
+              <button
+                onClick={() => setModalOpen(true)}
+                className="text-accent hover:text-accent-hover font-medium underline underline-offset-2 transition-colors"
+              >
+                View results
+              </button>
+              <Countdown />
+            </div>
+          )}
+        </div>
       </main>
       <ResultModal
         open={modalOpen}

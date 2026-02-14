@@ -6,6 +6,7 @@ const STORAGE_KEY = "geodle-state";
 const MAX_GUESSES = 6;
 
 function loadState(puzzleNumber: number): GameState {
+  if (typeof window === "undefined") return freshState(puzzleNumber);
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
     if (!raw) return freshState(puzzleNumber);

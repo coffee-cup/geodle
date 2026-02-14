@@ -38,6 +38,11 @@ function RootShell({ children }: { children: React.ReactNode }) {
             __html: `(function(){var t=localStorage.getItem('geodle-theme');var d=window.matchMedia('(prefers-color-scheme:dark)').matches;if(t==='dark'||(!t&&d))document.documentElement.classList.add('dark')})()`,
           }}
         />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var s=JSON.parse(localStorage.getItem('geodle-state'));if(s&&s.guesses&&s.guesses.length){var e=document.createElement('style');e.id='geodle-hydration';e.textContent='[data-game-area]{visibility:hidden}';document.head.appendChild(e)}}catch(e){}})()`,
+          }}
+        />
       </head>
       <body className="bg-paper text-ink font-sans antialiased min-h-dvh">
         {children}
