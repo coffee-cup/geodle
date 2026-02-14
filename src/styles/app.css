@@ -22,10 +22,10 @@
 
 .dark {
   --color-paper: #1a1816;
-  --color-surface: #242120;
-  --color-border: #3a3633;
+  --color-surface: #2a2726;
+  --color-border: #4a4643;
   --color-ink: #e5dfd6;
-  --color-ink-muted: #8a8279;
+  --color-ink-muted: #a8a098;
   --color-accent: #e09550;
   --color-accent-hover: #c88040;
   --color-correct: #6aad58;
@@ -38,6 +38,10 @@ body {
     linear-gradient(var(--grid-color) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
   background-size: 24px 24px;
+}
+
+button, [role="button"] {
+  cursor: pointer;
 }
 
 .sketch-border {

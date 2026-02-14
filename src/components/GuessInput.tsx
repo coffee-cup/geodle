@@ -6,9 +6,10 @@ interface GuessInputProps {
   onSubmit: (code: string) => void;
   disabled: boolean;
   disabledPlaceholder?: string;
+  onEnterIdle?: () => void;
 }
 
-export function GuessInput({ onSubmit, disabled, disabledPlaceholder }: GuessInputProps) {
+export function GuessInput({ onSubmit, disabled, disabledPlaceholder, onEnterIdle }: GuessInputProps) {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<CountryListItem[]>([]);
   const [highlightIndex, setHighlightIndex] = useState(-1);
@@ -45,6 +46,7 @@ export function GuessInput({ onSubmit, disabled, disabledPlaceholder }: GuessInp
         const target =
           highlightIndex >= 0 ? results[highlightIndex] : results[0];
         if (target) selectCountry(target);
+        else onEnterIdle?.();
         return;
       }
 
@@ -60,7 +62,7 @@ export function GuessInput({ onSubmit, disabled, disabledPlaceholder }: GuessInp
         setIsOpen(false);
       }
     },
-    [isOpen, results, highlightIndex, selectCountry],
+    [isOpen, results, highlightIndex, selectCountry, onEnterIdle],
   );
 
   return (

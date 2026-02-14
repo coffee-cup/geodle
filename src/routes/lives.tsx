@@ -128,8 +128,9 @@ function LivesGame({
     await game.guess(code);
   };
 
-  const inputDisabled =
-    game.status === "gameover" || game.roundStatus === "revealed";
+  const canAdvance = game.roundStatus === "revealed" && game.status === "playing";
+
+  const inputDisabled = game.status === "gameover";
 
   const inputPlaceholder =
     game.status === "gameover" ? "Game over" :
@@ -149,7 +150,12 @@ function LivesGame({
 
         <Silhouette svg={game.silhouette.svg} />
 
-        <GuessInput onSubmit={handleGuess} disabled={inputDisabled} disabledPlaceholder={inputPlaceholder} />
+        <GuessInput
+          onSubmit={handleGuess}
+          disabled={inputDisabled}
+          disabledPlaceholder={inputPlaceholder}
+          onEnterIdle={canAdvance ? game.advanceRound : undefined}
+        />
 
         <GuessList
           guesses={game.currentGuesses}

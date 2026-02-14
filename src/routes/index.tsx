@@ -38,6 +38,7 @@ function GamePage() {
         <Silhouette svg={silhouette.svg} />
         <div
           data-game-area=""
+          className="w-full space-y-6"
           ref={(el) => {
             if (el) document.getElementById("geodle-hydration")?.remove();
           }}

@@ -11,9 +11,9 @@ export function Header() {
     <header className="flex flex-col items-center border-b-2 border-border">
       <div className="flex items-center justify-between w-full px-4 py-2.5">
         <ThemeToggle />
-        <h1 className="text-3xl font-serif italic text-ink underline decoration-wavy decoration-accent underline-offset-4 decoration-1">
+        <Link to="/" className="text-3xl font-serif italic text-ink underline decoration-wavy decoration-accent underline-offset-4 decoration-1">
           Geodle
-        </h1>
+        </Link>
         <Link
           to="/help"
           className="sketch-border size-8 flex items-center justify-center
