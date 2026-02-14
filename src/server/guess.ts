@@ -4,7 +4,7 @@ import { evaluateGuess } from "@/lib/evaluate-guess";
 import countriesMetaJson from "@/data/countries-meta.json";
 import type { CountryMeta, GuessResponse } from "@/types";
 
-const SALT = import.meta.env.PUZZLE_SALT ?? "geodle-default-salt";
+const SALT = process.env.PUZZLE_SALT ?? "geodle-default-salt";
 const countriesMeta = countriesMetaJson as unknown as CountryMeta[];
 const MAX_GUESSES = 6;
 

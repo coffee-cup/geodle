@@ -3,7 +3,8 @@ import { getPuzzleNumber, getAnswerForPuzzle } from "@/lib/puzzle";
 import countriesMetaJson from "@/data/countries-meta.json";
 import type { CountryMeta, SilhouetteData } from "@/types";
 
-const SALT = import.meta.env.PUZZLE_SALT ?? "geodle-default-salt";
+const SALT = process.env.PUZZLE_SALT ?? "geodle-default-salt";
+console.log(`[geodle] PUZZLE_SALT=${SALT === "geodle-default-salt" ? "DEFAULT" : SALT.slice(0, 8) + "…"}`);
 const countriesMeta = countriesMetaJson as unknown as CountryMeta[];
 
 const svgModules = import.meta.glob("/src/data/silhouettes/*.svg", {

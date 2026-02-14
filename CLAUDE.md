@@ -15,7 +15,7 @@ Daily country silhouette guessing game (Wordle-style).
 - Root route uses `shellComponent` (not `component`) for HTML wrapper
 - Entry: `src/router.tsx` exports `getRouter()`
 - Route tree auto-generated at `src/routeTree.gen.ts`
-- Server env vars: `import.meta.env` in server fns
+- Server env vars: `process.env` in server fns (not `import.meta.env` — Vite only exposes `VITE_` prefixed vars)
 - Data pipeline: `mise run data` runs both prepare-countries (meta JSON) and download-silhouettes (Borderly SVGs)
 - Silhouettes are high-res SVGs from Borderly, checked into `src/data/silhouettes/`, loaded via Vite `?raw` glob
 - Country difficulty is tag-based (explicit sets), not area-computed
@@ -38,7 +38,8 @@ Daily country silhouette guessing game (Wordle-style).
 
 - NEVER run the dev server from Claude — let the user run it manually
 - Dev server runs on port 5543
-- Always use `mise run` for tasks — never call pnpm/bun/vitest directly
+- Package manager: bun (never pnpm/npm/yarn)
+- Always use `mise run` for tasks — never call bun/vitest directly
 - `mise run check` — typecheck after changes
 - `mise run test` — run tests
 
