@@ -37,7 +37,7 @@
       2.63,
       28.06
     ],
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "code": "ASM",
@@ -67,7 +67,7 @@
       17.53,
       -12.27
     ],
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "code": "AIA",
@@ -427,7 +427,7 @@
       18.63,
       15.28
     ],
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "code": "CHL",
@@ -1207,7 +1207,7 @@
       18.07,
       27.02
     ],
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "code": "LIE",
@@ -1297,7 +1297,7 @@
       -3.59,
       17.32
     ],
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "code": "MLT",
@@ -1327,7 +1327,7 @@
       -10.37,
       20.22
     ],
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "code": "MUS",
@@ -1537,7 +1537,7 @@
       9.33,
       17.41
     ],
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "code": "NGA",
@@ -1547,7 +1547,7 @@
       8.08,
       9.59
     ],
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "code": "NIU",
