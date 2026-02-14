@@ -32,6 +32,7 @@ export const Route = createRootRoute({
       { name: "twitter:image", content: `${siteUrl}/og.png` },
     ],
     links: [
+      { rel: "icon", href: "https://fav.farm/%F0%9F%8C%8D" },
       { rel: "stylesheet", href: appCss },
       {
         rel: "stylesheet",
