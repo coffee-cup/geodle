@@ -37,7 +37,7 @@
       2.63,
       28.06
     ],
-    "difficulty": "medium"
+    "difficulty": "easy"
   },
   {
     "code": "ASM",
@@ -687,7 +687,7 @@
       39.61,
       8.61
     ],
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "code": "FRO",
@@ -1427,7 +1427,7 @@
       35.6,
       -17.2
     ],
-    "difficulty": "easy"
+    "difficulty": "hard"
   },
   {
     "code": "MMR",
@@ -1467,7 +1467,7 @@
       17.2,
       -22.07
     ],
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "code": "NRU",
@@ -2067,7 +2067,7 @@
       29.91,
       15.97
     ],
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "code": "SUR",
@@ -2137,7 +2137,7 @@
       34.8,
       -6.27
     ],
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "code": "THA",
@@ -2397,7 +2397,7 @@
       27.81,
       -13.46
     ],
-    "difficulty": "easy"
+    "difficulty": "medium"
   },
   {
     "code": "ZWE",

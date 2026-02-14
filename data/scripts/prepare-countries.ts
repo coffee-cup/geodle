@@ -17,9 +17,8 @@ interface CountryMeta {
 // Countries widely recognized as large/distinctive silhouettes
 const EASY_CODES = new Set([
   "USA", "RUS", "CAN", "CHN", "BRA", "AUS", "IND", "ARG", "KAZ", "SAU",
-  "MEX", "IDN", "SDN", "LBY", "IRN", "MNG", "PER", "TCD", "NER", "AGO",
-  "MLI", "ZAF", "COL", "ETH", "BOL", "MRT", "EGY", "TZA", "NGA", "VEN",
-  "PAK", "NAM", "TUR", "CHL", "ZMB", "MMR", "AFG", "SOM", "COD",
+  "MEX", "IDN", "IRN", "MNG", "PER", "ZAF", "COL", "BOL", "EGY", "VEN",
+  "PAK", "TUR", "CHL", "MMR", "AFG", "SOM", "COD",
   "JPN", "NOR", "SWE", "FIN", "GBR", "ITA", "FRA", "ESP", "DEU", "POL",
   "NZL", "PNG", "MYS", "THA", "VNM", "PHL", "MAR", "DZA", "IRQ", "UKR",
 ]);
