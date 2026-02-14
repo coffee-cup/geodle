@@ -26,6 +26,10 @@ description = "Run tests"
 run = "bun run tsc --noEmit"
 description = "Typecheck with noEmit"
 
+[tasks."og:generate"]
+run = "bun run data/scripts/generate-og.tsx"
+description = "Generate OG image"
+
 [tasks.build]
 run = "bun run vite build"
 description = "Build for production"

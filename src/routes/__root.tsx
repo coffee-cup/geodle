@@ -5,17 +5,31 @@ import {
 } from "@tanstack/react-router";
 import appCss from "../styles/app.css?url";
 
+const siteUrl = process.env.RAILWAY_PUBLIC_DOMAIN
+  ? `https://${process.env.RAILWAY_PUBLIC_DOMAIN}`
+  : "http://localhost:5543";
+
+const title = "Geodle — Guess the Country";
+const description =
+  "A daily geography guessing game. Identify countries from their silhouettes.";
+
 export const Route = createRootRoute({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Geodle — Guess the Country" },
-      {
-        name: "description",
-        content:
-          "A daily geography guessing game. Identify countries from their silhouettes.",
-      },
+      { title },
+      { name: "description", content: description },
+      { property: "og:type", content: "website" },
+      { property: "og:title", content: title },
+      { property: "og:description", content: description },
+      { property: "og:image", content: `${siteUrl}/og.png` },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: title },
+      { name: "twitter:description", content: description },
+      { name: "twitter:image", content: `${siteUrl}/og.png` },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
