@@ -19,14 +19,14 @@ const EASY_CODES = new Set([
   "USA", "RUS", "CAN", "CHN", "BRA", "AUS", "IND", "ARG", "KAZ", "SAU",
   "MEX", "IDN", "SDN", "LBY", "IRN", "MNG", "PER", "TCD", "NER", "AGO",
   "MLI", "ZAF", "COL", "ETH", "BOL", "MRT", "EGY", "TZA", "NGA", "VEN",
-  "PAK", "NAM", "MOZ", "TUR", "CHL", "ZMB", "MMR", "AFG", "SOM", "COD",
+  "PAK", "NAM", "TUR", "CHL", "ZMB", "MMR", "AFG", "SOM", "COD",
   "JPN", "NOR", "SWE", "FIN", "GBR", "ITA", "FRA", "ESP", "DEU", "POL",
   "NZL", "PNG", "MYS", "THA", "VNM", "PHL", "MAR", "DZA", "IRQ", "UKR",
 ]);
 
 const HARD_CODES = new Set([
   "BRN", "BHR", "QAT", "SGP", "LUX", "MNE", "MKD", "SVN", "SWZ", "BDI",
-  "RWA", "DJI", "GNB", "TLS", "CYP", "LBN", "PSE", "KWT", "TTO",
+  "RWA", "DJI", "GNB", "TLS", "CYP", "LBN", "PSE", "KWT", "TTO", "MOZ",
 ]);
 
 function getDifficulty(code: string): "easy" | "medium" | "hard" {
