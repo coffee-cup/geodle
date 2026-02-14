@@ -43,7 +43,11 @@ function GamePage() {
             if (el) document.getElementById("geodle-hydration")?.remove();
           }}
         >
-          <GuessInput onSubmit={handleGuess} disabled={gameOver} />
+          <GuessInput
+            onSubmit={handleGuess}
+            disabled={gameOver}
+            disabledPlaceholder={game.status === "won" ? "Correct!" : "Game over"}
+          />
           <GuessList guesses={game.guesses} maxGuesses={6} />
           {gameOver && !modalOpen && (
             <div className="flex flex-col items-center gap-2">
