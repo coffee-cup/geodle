@@ -3,8 +3,6 @@ import { getPuzzleNumber, getAnswerForPuzzle } from "@/lib/puzzle";
 import countriesMetaJson from "@/data/countries-meta.json";
 import type { CountryMeta, SilhouetteData } from "@/types";
 
-const SALT = process.env.PUZZLE_SALT ?? "geodle-default-salt";
-console.log(`[geodle] PUZZLE_SALT=${SALT === "geodle-default-salt" ? "DEFAULT" : SALT.slice(0, 8) + "…"}`);
 const countriesMeta = countriesMetaJson as unknown as CountryMeta[];
 
 const svgModules = import.meta.glob("/src/data/silhouettes/*.svg", {
@@ -23,7 +21,9 @@ export function getSvgByCode(code: string): string {
 export const getDailySilhouette = createServerFn({ method: "GET" }).handler(
   async () => {
     const puzzleNumber = getPuzzleNumber();
-    const answer = getAnswerForPuzzle(puzzleNumber, countriesMeta, SALT);
+    const salt = process.env.PUZZLE_SALT ?? "geodle-default-salt";
+    const answer = getAnswerForPuzzle(puzzleNumber, countriesMeta, salt);
+    console.log(`[geodle] puzzle #${puzzleNumber} salt=${salt === "geodle-default-salt" ? "DEFAULT" : salt.slice(0, 8) + "…"} answer=${answer.code}`);
 
     const silhouette: SilhouetteData = { svg: getSvgByCode(answer.code) };
     return { silhouette, puzzleNumber };
