@@ -5,9 +5,10 @@ import type { CountryListItem } from "@/types";
 interface GuessInputProps {
   onSubmit: (code: string) => void;
   disabled: boolean;
+  disabledPlaceholder?: string;
 }
 
-export function GuessInput({ onSubmit, disabled }: GuessInputProps) {
+export function GuessInput({ onSubmit, disabled, disabledPlaceholder }: GuessInputProps) {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState<CountryListItem[]>([]);
   const [highlightIndex, setHighlightIndex] = useState(-1);
@@ -73,7 +74,7 @@ export function GuessInput({ onSubmit, disabled }: GuessInputProps) {
         onBlur={() => setTimeout(() => setIsOpen(false), 200)}
         onFocus={() => query.trim() && results.length > 0 && setIsOpen(true)}
         disabled={disabled}
-        placeholder={disabled ? "Game over" : "Type a country name..."}
+        placeholder={disabled ? (disabledPlaceholder ?? "Game over") : "Type a country name..."}
         className="sketch-border w-full px-4 py-3 bg-surface/80 border border-border
           text-ink placeholder:text-ink-muted/50
           focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20

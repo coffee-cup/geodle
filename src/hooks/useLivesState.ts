@@ -2,15 +2,15 @@ import { useState, useCallback } from "react";
 import { submitLivesGuess } from "@/server/lives";
 import type { LivesGameState, LivesSessionData, GuessResult, SilhouetteData } from "@/types";
 
-const MAX_LIVES = 10;
 const MAX_ROUND_GUESSES = 3;
 
-function initState(session: LivesSessionData): LivesGameState {
+function initState(session: LivesSessionData, maxLives: number): LivesGameState {
   return {
     seed: session.seed,
     round: session.round,
-    lives: MAX_LIVES,
+    lives: maxLives,
     score: 0,
+    difficulty: session.difficulty,
     currentGuesses: [],
     roundStatus: "guessing",
     status: "playing",
@@ -18,8 +18,8 @@ function initState(session: LivesSessionData): LivesGameState {
   };
 }
 
-export function useLivesState(session: LivesSessionData) {
-  const [state, setState] = useState<LivesGameState>(() => initState(session));
+export function useLivesState(session: LivesSessionData, maxLives: number) {
+  const [state, setState] = useState<LivesGameState>(() => initState(session, maxLives));
   const [nextSilhouette, setNextSilhouette] = useState<SilhouetteData | null>(null);
   const [nextRound, setNextRound] = useState<number | null>(null);
 
@@ -34,6 +34,7 @@ export function useLivesState(session: LivesSessionData) {
           round: state.round,
           code,
           guess_number: guessNumber,
+          difficulty: state.difficulty,
         },
       });
 
@@ -90,17 +91,10 @@ export function useLivesState(session: LivesSessionData) {
     }));
   }, [nextSilhouette, nextRound]);
 
-  const restart = useCallback((newSession: LivesSessionData) => {
-    setNextSilhouette(null);
-    setNextRound(null);
-    setState(initState(newSession));
-  }, []);
-
   return {
     ...state,
     maxRoundGuesses: MAX_ROUND_GUESSES,
     guess,
     advanceRound,
-    restart,
   };
 }

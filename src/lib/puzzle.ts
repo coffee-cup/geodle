@@ -1,5 +1,5 @@
 import seedrandom from "seedrandom";
-import type { CountryMeta } from "@/types";
+import type { CountryMeta, Difficulty } from "@/types";
 
 const EPOCH = new Date("2025-01-01T00:00:00Z").getTime();
 const DAY_MS = 86400000;
@@ -19,12 +19,18 @@ export function getAnswerForPuzzle(
   return eligible[index];
 }
 
-/** Fisher-Yates shuffle with seeded RNG. Filters out hard countries. */
+/** Fisher-Yates shuffle with seeded RNG, filtered by difficulty ceiling. */
 export function getShuffledCountries(
   seed: string,
   countries: CountryMeta[],
+  difficulty: Difficulty = "medium",
 ): CountryMeta[] {
-  const eligible = countries.filter((c) => c.difficulty !== "hard");
+  const eligible =
+    difficulty === "easy"
+      ? countries.filter((c) => c.difficulty === "easy")
+      : difficulty === "medium"
+        ? countries.filter((c) => c.difficulty !== "hard")
+        : countries;
   const shuffled = [...eligible];
   const rng = seedrandom(seed);
   for (let i = shuffled.length - 1; i > 0; i--) {

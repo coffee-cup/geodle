@@ -1,9 +1,11 @@
+export type Difficulty = "easy" | "medium" | "hard";
+
 export interface CountryMeta {
   code: string;
   name: string;
   aliases: string[];
   centroid: [lon: number, lat: number];
-  difficulty: "easy" | "medium" | "hard";
+  difficulty: Difficulty;
 }
 
 export interface CountryListItem {
@@ -44,6 +46,7 @@ export interface LivesSessionData {
   seed: string;
   silhouette: SilhouetteData;
   round: number;
+  difficulty: Difficulty;
 }
 
 export interface LivesGuessResponse extends GuessResponse {
@@ -57,6 +60,7 @@ export interface LivesGameState {
   round: number;
   lives: number;
   score: number;
+  difficulty: Difficulty;
   currentGuesses: GuessResult[];
   roundStatus: "guessing" | "revealed";
   status: "playing" | "gameover";
