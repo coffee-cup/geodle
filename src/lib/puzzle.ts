@@ -1,7 +1,7 @@
 import seedrandom from "seedrandom";
 import type { CountryMeta, Difficulty } from "@/types";
 
-const EPOCH = new Date("2025-01-01T00:00:00Z").getTime();
+const EPOCH = new Date("2026-02-13T00:00:00Z").getTime();
 const DAY_MS = 86400000;
 
 export function getPuzzleNumber(date: Date = new Date()): number {

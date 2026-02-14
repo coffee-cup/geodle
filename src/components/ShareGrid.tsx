@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type { GuessResult } from "@/types";
 
 const DISTANCE_THRESHOLDS = [1000, 3000];
@@ -27,9 +28,12 @@ interface ShareGridProps {
 
 export function ShareGrid({ guesses, puzzleNumber, won }: ShareGridProps) {
   const text = buildShareText(guesses, puzzleNumber, won);
+  const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
     await navigator.clipboard.writeText(text);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
@@ -40,7 +44,7 @@ export function ShareGrid({ guesses, puzzleNumber, won }: ShareGridProps) {
         className="sketch-border px-6 py-2.5 bg-accent text-white font-semibold
           hover:bg-accent-hover active:bg-accent-hover/90 transition-colors"
       >
-        Copy to clipboard
+        {copied ? "Copied!" : "Copy to clipboard"}
       </button>
     </div>
   );
