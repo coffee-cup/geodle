@@ -31,7 +31,7 @@ async function main() {
     }
 
     try {
-      const url = `https://borderly.dev/country/${country.iso3}.svg?fill=000000&stroke=000000`;
+      const url = `https://borderly.dev/country/${country.iso3}.svg?fill=000000&stroke=000000&strokeWidth=1`;
       const svgRes = await fetch(url);
       if (!svgRes.ok) {
         failed.push(`${code}: HTTP ${svgRes.status}`);
