@@ -99,7 +99,7 @@ function OgImage({ worldMapSrc }: { worldMapSrc: string }) {
         <div
           style={{
             fontFamily: "Instrument Serif",
-            fontSize: "120px",
+            fontSize: "144px",
             fontStyle: "italic",
             color: "#2c2825",
             lineHeight: 1,
@@ -118,7 +118,7 @@ function OgImage({ worldMapSrc }: { worldMapSrc: string }) {
         <div
           style={{
             fontFamily: "DM Sans",
-            fontSize: "32px",
+            fontSize: "38px",
             color: "#8a8279",
             letterSpacing: "0.03em",
           }}
