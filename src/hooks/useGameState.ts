@@ -54,7 +54,14 @@ export function useGameState(puzzleNumber: number) {
           : guesses.length >= MAX_GUESSES
             ? "lost"
             : "playing";
-        const next: GameState = { ...prev, guesses, status };
+        const next: GameState = {
+          ...prev,
+          guesses,
+          status,
+          ...(status !== "playing" && response.answer_name
+            ? { answer_name: response.answer_name }
+            : {}),
+        };
         persist(next);
         return next;
       });

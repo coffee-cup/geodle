@@ -26,6 +26,7 @@ export interface GameState {
   puzzle_number: number;
   guesses: GuessResult[];
   status: "playing" | "won" | "lost";
+  answer_name?: string;
 }
 
 export interface SilhouetteData {

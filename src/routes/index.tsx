@@ -18,13 +18,11 @@ function GamePage() {
   const { silhouette, puzzleNumber } = Route.useLoaderData();
   const game = useGameState(puzzleNumber);
   const [modalOpen, setModalOpen] = useState(false);
-  const [answerName, setAnswerName] = useState<string>();
 
   const handleGuess = async (code: string) => {
     const response = await game.guess(code);
     if (!response) return;
     if (response.correct || game.guesses.length + 1 >= 6) {
-      setAnswerName(response.answer_name);
       setTimeout(() => setModalOpen(true), 600);
     }
   };
@@ -65,7 +63,7 @@ function GamePage() {
       <ResultModal
         open={modalOpen}
         won={game.status === "won"}
-        answerName={answerName}
+        answerName={game.answer_name}
         guesses={game.guesses}
         puzzleNumber={puzzleNumber}
         onClose={() => setModalOpen(false)}
