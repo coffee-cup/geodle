@@ -9,7 +9,7 @@ const siteUrl = process.env.RAILWAY_PUBLIC_DOMAIN
   ? `https://${process.env.RAILWAY_PUBLIC_DOMAIN}`
   : "http://localhost:5543";
 
-const title = "Geodle — Guess the Country";
+const title = "Geodle - Guess the Country";
 const description =
   "A daily geography guessing game. Identify countries from their silhouettes.";
 

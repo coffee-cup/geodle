@@ -46,7 +46,7 @@ function HelpPage() {
                 </span>
               </div>
               <p className="text-ink-muted text-pretty px-1 py-1">
-                Getting warmer — the answer is 1,120 km south of Spain.
+                Getting warmer, the answer is 1,120 km south of Spain.
               </p>
               <div className="sketch-border flex items-center justify-between px-4 py-3 border border-correct/30 bg-correct-light">
                 <span className="text-ink font-medium">Morocco</span>
