@@ -23,14 +23,15 @@ export function bearing(
 ): number {
   const [lon1, lat1] = a.map(toRad);
   const [lon2, lat2] = b.map(toRad);
-  const dlon = lon2 - lon1;
 
-  const y = Math.sin(dlon) * Math.cos(lat2);
-  const x =
-    Math.cos(lat1) * Math.sin(lat2) -
-    Math.sin(lat1) * Math.cos(lat2) * Math.cos(dlon);
+  const dPhi = Math.log(
+    Math.tan(Math.PI / 4 + lat2 / 2) / Math.tan(Math.PI / 4 + lat1 / 2),
+  );
+  let dLon = lon2 - lon1;
+  if (Math.abs(dLon) > Math.PI)
+    dLon = dLon > 0 ? dLon - 2 * Math.PI : dLon + 2 * Math.PI;
 
-  return (toDeg(Math.atan2(y, x)) + 360) % 360;
+  return (toDeg(Math.atan2(dLon, dPhi)) + 360) % 360;
 }
 
 const DIRECTIONS = ["N", "NE", "E", "SE", "S", "SW", "W", "NW"] as const;

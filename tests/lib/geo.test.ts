@@ -39,6 +39,13 @@ describe("bearing", () => {
     const b1 = bearing(a, b);
     expect(b1).toBeLessThan(5);
   });
+
+  it("Russia → Costa Rica should be SW, not N (high-lat + large dLon)", () => {
+    const russia: [number, number] = [95.64, 66.03];
+    const costaRica: [number, number] = [-84.19, 9.98];
+    const dir = compassDirection(bearing(russia, costaRica));
+    expect(dir).toBe("SW");
+  });
 });
 
 describe("compassDirection", () => {
