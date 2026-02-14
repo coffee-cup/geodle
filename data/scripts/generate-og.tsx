@@ -100,7 +100,6 @@ function OgImage({ worldMapSrc }: { worldMapSrc: string }) {
           style={{
             fontFamily: "Instrument Serif",
             fontSize: "144px",
-            fontStyle: "italic",
             color: "#2c2825",
             lineHeight: 1,
           }}
@@ -133,7 +132,7 @@ function OgImage({ worldMapSrc }: { worldMapSrc: string }) {
 async function main() {
   const [instrumentSerif, dmSans, worldMapSrc] = await Promise.all([
     fetchFont(
-      "https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zATiw.ttf"
+      "https://fonts.gstatic.com/s/instrumentserif/v5/jizBRFtNs2ka5fXjeivQ4LroWlx-2zI.ttf"
     ),
     fetchFont(
       "https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhTg.ttf"
@@ -149,7 +148,7 @@ async function main() {
       {
         name: "Instrument Serif",
         data: instrumentSerif,
-        style: "italic",
+        style: "normal",
         weight: 400,
       },
       {
