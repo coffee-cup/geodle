@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
+import { RESET_HOUR_UTC } from "@/lib/puzzle";
 
 function getNextPuzzleCountdown(): string {
   const now = new Date();
-  const tomorrow = new Date(now);
-  tomorrow.setUTCHours(24, 0, 0, 0);
-  const diff = tomorrow.getTime() - now.getTime();
+  const target = new Date(now);
+  target.setUTCHours(RESET_HOUR_UTC, 0, 0, 0);
+  if (target.getTime() <= now.getTime()) {
+    target.setUTCDate(target.getUTCDate() + 1);
+  }
+  const diff = target.getTime() - now.getTime();
 
   const h = Math.floor(diff / 3600000);
   const m = Math.floor((diff % 3600000) / 60000);

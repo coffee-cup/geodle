@@ -7,11 +7,11 @@ const meta = countriesMeta as unknown as CountryMeta[];
 
 describe("getPuzzleNumber", () => {
   it("epoch date = puzzle 0", () => {
-    expect(getPuzzleNumber(new Date("2026-02-13T00:00:00Z"))).toBe(0);
+    expect(getPuzzleNumber(new Date("2026-02-13T15:00:00Z"))).toBe(0);
   });
 
   it("one day after epoch = puzzle 1", () => {
-    expect(getPuzzleNumber(new Date("2026-02-14T00:00:00Z"))).toBe(1);
+    expect(getPuzzleNumber(new Date("2026-02-14T15:00:00Z"))).toBe(1);
   });
 
   it("returns positive number for today", () => {

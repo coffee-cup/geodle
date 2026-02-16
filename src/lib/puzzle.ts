@@ -1,7 +1,10 @@
 import seedrandom from "seedrandom";
 import type { CountryMeta, Difficulty } from "@/types";
 
-const EPOCH = new Date("2026-02-13T00:00:00Z").getTime();
+/** Hour (UTC) when the daily puzzle resets — 15:00 UTC = 10am EST */
+export const RESET_HOUR_UTC = 15;
+
+const EPOCH = new Date(`2026-02-13T${String(RESET_HOUR_UTC).padStart(2, "0")}:00:00Z`).getTime();
 const DAY_MS = 86400000;
 
 export function getPuzzleNumber(date: Date = new Date()): number {
